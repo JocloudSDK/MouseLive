@@ -1,4 +1,4 @@
-# MouseLive-IOS
+# JoyLive-PC
 Solutions for Pan-Entertainment Scenarios [中文](./README_zh.md)
 
 # Overview 
