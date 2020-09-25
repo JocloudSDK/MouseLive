@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RoomInfoCellClass</class>
+ <widget class="QWidget" name="RoomInfoCellClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>152</width>
+    <height>177</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>152</width>
+    <height>177</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>152</width>
+    <height>177</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="topRootWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="anchorNickLabel">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>126</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>LanPZzzz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="roomNumbersLabel">
+      <property name="geometry">
+       <rect>
+        <x>127</x>
+        <y>129</y>
+        <width>20</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>1234</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="countGraphicsView">
+      <property name="geometry">
+       <rect>
+        <x>113</x>
+        <y>130</y>
+        <width>14</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/mainui/count_bg);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="anchorGraphicsView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>152</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/mainui/room_cell_default);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>anchorGraphicsView</zorder>
+     <zorder>anchorNickLabel</zorder>
+     <zorder>countGraphicsView</zorder>
+     <zorder>roomNumbersLabel</zorder>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="buttomRootWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>152</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>152</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="roomNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>5</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>12321421</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../joy.qrc"/>
+ </resources>
+ <connections/>
+</ui>

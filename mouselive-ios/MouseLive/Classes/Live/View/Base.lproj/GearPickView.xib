@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GearPickView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzO-lt-jtR">
+                    <rect key="frame" x="1" y="44" width="414" height="182"/>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-tw-ezp">
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERD-qR-eLq">
+                            <rect key="frame" x="180.5" y="23" width="52.5" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcY-9f-o1h">
+                            <rect key="frame" x="20" y="17" width="48" height="30"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.345056951" green="0.34512165189999999" blue="0.34505286810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dCE-F5-Ag9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-n2-IkT">
+                            <rect key="frame" x="363" y="17" width="30" height="30"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="1" green="0.49098974470000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="okAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jY1-AC-Yt0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="rcY-9f-o1h" firstAttribute="centerY" secondItem="XXR-tw-ezp" secondAttribute="centerY" constant="10" id="3cR-f3-Lm6"/>
+                        <constraint firstAttribute="trailing" secondItem="cr4-n2-IkT" secondAttribute="trailing" constant="20" id="4b7-J8-j0e"/>
+                        <constraint firstItem="rcY-9f-o1h" firstAttribute="leading" secondItem="XXR-tw-ezp" secondAttribute="leading" constant="20" id="7x9-xM-jue"/>
+                        <constraint firstAttribute="height" constant="44" id="GEF-B6-Gkv"/>
+                        <constraint firstItem="cr4-n2-IkT" firstAttribute="centerY" secondItem="XXR-tw-ezp" secondAttribute="centerY" constant="10" id="Jo4-xh-5aU"/>
+                        <constraint firstItem="ERD-qR-eLq" firstAttribute="centerX" secondItem="XXR-tw-ezp" secondAttribute="centerX" id="ome-TR-7yg"/>
+                        <constraint firstItem="ERD-qR-eLq" firstAttribute="centerY" secondItem="XXR-tw-ezp" secondAttribute="centerY" constant="10" id="sFL-HR-8t1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XXR-tw-ezp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8gM-Gd-qhx"/>
+                <constraint firstItem="XXR-tw-ezp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sye-Ki-Yag"/>
+                <constraint firstItem="NzO-lt-jtR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="Z7p-Ux-wgQ"/>
+                <constraint firstAttribute="trailing" secondItem="XXR-tw-ezp" secondAttribute="trailing" constant="1" id="cK7-XR-Gj6"/>
+                <constraint firstAttribute="bottom" secondItem="NzO-lt-jtR" secondAttribute="bottom" constant="1" id="n7Q-Ek-4R1"/>
+                <constraint firstItem="NzO-lt-jtR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="svb-Su-8dY"/>
+                <constraint firstItem="NzO-lt-jtR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="1" id="yAS-ER-r1u"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pickView" destination="NzO-lt-jtR" id="hRA-7O-TkM"/>
+                <outlet property="qualityBtn" destination="ERD-qR-eLq" id="BFI-Fs-2eE"/>
+            </connections>
+            <point key="canvasLocation" x="80" y="118"/>
+        </view>
+    </objects>
+</document>

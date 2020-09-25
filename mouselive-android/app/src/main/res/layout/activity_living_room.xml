@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:clipToPadding="true"
+        android:keepScreenOn="true"
+        tools:context=".views.LivingRoomActivity">
+
+        <SurfaceView
+            android:id="@+id/cdnView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_preview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_room_owner_info_background"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivRoomOwner"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/default_user_icon" />
+
+            <TextView
+                android:id="@+id/tvRoomName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="jerry"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/room_msg_size"
+                app:layout_constraintBottom_toTopOf="@+id/tvWatcher"
+                app:layout_constraintStart_toEndOf="@+id/ivRoomOwner"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvWatcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_room_people"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="9999"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/room_watcher_sum_size"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRoomName"
+                app:layout_constraintStart_toStartOf="@+id/tvRoomName"
+                app:layout_constraintTop_toBottomOf="@+id/tvRoomName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ivPublishMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/ivMembers"
+            app:layout_constraintTop_toTopOf="@+id/layoutOwner"
+            app:srcCompat="@mipmap/icon_rct" />
+
+        <ImageView
+            android:id="@+id/ivMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/ivLeave"
+            app:layout_constraintTop_toTopOf="@+id/layoutOwner"
+            app:srcCompat="@mipmap/ic_room_members" />
+
+        <ImageView
+            android:id="@+id/ivLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/layoutOwner"
+            app:srcCompat="@mipmap/ic_room_close" />
+
+        <LinearLayout
+            android:id="@+id/llContributions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_room_msg_item_background"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/layoutOwner"
+            app:layout_constraintTop_toBottomOf="@+id/layoutOwner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/room_info_top_monery"
+                android:textColor="@color/room_gongxian_color"
+                android:textSize="@dimen/room_contributions_text_size" />
+
+            <TextView
+                android:id="@+id/tvContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="9,302,000"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/room_contributions_text_size" />
+        </LinearLayout>
+
+        <com.sclouds.mouselive.widget.NetinfoLLayout
+            android:id="@+id/infoOwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/layoutOwner"
+            app:layout_constraintTop_toBottomOf="@+id/llContributions" />
+
+        <com.sclouds.mouselive.widget.NetinfoLLayout
+            android:id="@+id/infoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/ivLeave"
+            app:layout_constraintTop_toTopOf="@+id/infoOwen" />
+
+        <com.sclouds.mouselive.widget.NetinfoLLayout
+            android:id="@+id/infoMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/il_bottom_bar"
+            app:layout_constraintEnd_toEndOf="@+id/ivLeave" />
+
+        <TextView
+            android:id="@+id/btClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/ic_voice_mai_up"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:text="@string/room_close_lianmai"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_preview"
+            app:layout_constraintEnd_toEndOf="@+id/rv_preview" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <ScrollView
+            android:id="@+id/sl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:fitsSystemWindows="true"
+            app:layout_constraintBottom_toTopOf="@+id/il_bottom_bar"
+            app:layout_constraintStart_toStartOf="@+id/layoutOwner"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:layout_constraintWidth_percent="0.7">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:descendantFocusability="beforeDescendants" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llMoreMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_room_more_setting_background"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/il_bottom_bar"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tvCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_room_camera"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/room_toggle_camera"
+                android:textColor="@color/more_menu_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvMirror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_room_mirror"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/room_toggle_mirror"
+                android:textColor="@color/more_menu_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvSharpnessr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_room_sharpeness"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/room_sharpness"
+                android:textColor="@color/more_menu_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvFace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/ic_room_face"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/room_toggle_face"
+                android:textColor="@color/more_menu_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/il_bottom_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivLeave"
+            app:layout_constraintStart_toStartOf="@+id/layoutOwner">
+
+            <TextView
+                android:id="@+id/tvInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_room_msg_item_background"
+                android:hint="@string/room_say_something"
+                android:lines="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="7dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="7dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="@dimen/room_msg_size" />
+
+            <LinearLayout
+                android:id="@+id/llmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivMenuMic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:padding="4dp"
+                    app:srcCompat="@mipmap/ic_room_mic_on" />
+
+                <ImageView
+                    android:id="@+id/ivPK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:padding="4dp"
+                    app:srcCompat="@mipmap/ic_room_pk" />
+
+                <ImageView
+                    android:id="@+id/ivLianMai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:padding="4dp"
+                    app:srcCompat="@mipmap/ic_room_lianmai" />
+
+                <ImageView
+                    android:id="@+id/ivSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:padding="4dp"
+                    app:srcCompat="@mipmap/ic_room_setting" />
+
+                <ImageView
+                    android:id="@+id/ivFadeback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:padding="4dp"
+                    app:srcCompat="@mipmap/ic_room_fadeback" />
+
+                <ImageView
+                    android:id="@+id/ivLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    app:srcCompat="@mipmap/ic_room_log" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

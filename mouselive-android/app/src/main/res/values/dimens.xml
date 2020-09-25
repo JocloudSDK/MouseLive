@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_front">18sp</dimen>
+    <dimen name="medium_front">14sp</dimen>
+    <dimen name="small_front">12sp</dimen>
+
+    <dimen name="room_contributions_text_size">10sp</dimen>
+    <dimen name="room_msg_size">14sp</dimen>
+    <dimen name="room_watcher_sum_size">8sp</dimen>
+    <dimen name="dialog_title">16dp</dimen>
+    <dimen name="dialog_ok">14dp</dimen>
+    <dimen name="voice_room_name">16sp</dimen>
+    <dimen name="voice_room_wather">10sp</dimen>
+    <dimen name="main_room_tab_text_selected">15sp</dimen>
+    <dimen name="main_room_tab_text_unselected">12sp</dimen>
+</resources>

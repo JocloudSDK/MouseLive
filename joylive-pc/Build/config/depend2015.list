@@ -1,0 +1,5 @@
+# 请查询 http:==repo.yypm.com=dwintegrate 下各个子目录里面的version.info
+# 版本号等于releaseversion字段的值
+
+[dwinternal]
+orangefilterpub2013=1.4.2.7ebbd233.56

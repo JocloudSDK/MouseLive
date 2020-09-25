@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientEquipmentUIClass</class>
+ <widget class="QWidget" name="ClientEquipmentUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="topWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>240</width>
+     <height>365</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QPushButton" name="userListBtn">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>10</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 65, 255);</string>
+    </property>
+    <property name="text">
+     <string>在线人数</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="anchorListBtn">
+    <property name="geometry">
+     <rect>
+      <x>102</x>
+      <y>10</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 65, 255);</string>
+    </property>
+    <property name="text">
+     <string>主播人数</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="userListWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>240</width>
+      <height>324</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="bottomWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>373</y>
+     <width>240</width>
+     <height>265</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QWidget" name="equipmentWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>240</width>
+      <height>258</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="cameraWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>14</y>
+       <width>203</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <widget class="QComboBox" name="cameraComboBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>32</y>
+        <width>203</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cameraLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(133, 133, 133);</string>
+      </property>
+      <property name="text">
+       <string>摄像头选择</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="micphoneWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>79</y>
+       <width>203</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <widget class="QComboBox" name="micphoneComboBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>32</y>
+        <width>203</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="micphoneLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(133, 133, 133);</string>
+      </property>
+      <property name="text">
+       <string>麦克风</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="publishModeWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>144</y>
+       <width>203</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <widget class="QComboBox" name="publishModeComboBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>32</y>
+        <width>203</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="publishModeLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(133, 133, 133);</string>
+      </property>
+      <property name="text">
+       <string>开播档位</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="otherWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>212</y>
+       <width>203</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="micphoneBtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>38</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/livingui/micphone_on_button);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cameraBtn">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>0</y>
+        <width>38</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/livingui/camera_on_button);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mirrorBtn">
+      <property name="geometry">
+       <rect>
+        <x>108</x>
+        <y>0</y>
+        <width>38</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/livingui/camera_mirror_button);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="breakLinkBtn">
+      <property name="geometry">
+       <rect>
+        <x>163</x>
+        <y>0</y>
+        <width>34</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/livingui/break_link_off);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="linkWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>240</width>
+      <height>258</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="linkBtn">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>190</y>
+       <width>212</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 65, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>连麦</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>bottomWidget</zorder>
+  <zorder>topWidget</zorder>
+ </widget>
+ <resources>
+  <include location="../joy.qrc"/>
+ </resources>
+ <connections/>
+</ui>

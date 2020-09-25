@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Chatting"; ObjectID = "6Aq-ve-HiN"; */
+"6Aq-ve-HiN.text" = "语音聊天";
+
+/* Class = "UILabel"; text = "Please Choose a Room"; ObjectID = "7Z5-ax-ybl"; */
+"7Z5-ax-ybl.text" = "请选择开播类型";
+
+/* Class = "UILabel"; text = "Voice"; ObjectID = "Ek2-AR-0zQ"; */
+"Ek2-AR-0zQ.text" = "音频直播";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "QCH-2A-2Eg"; */
+"QCH-2A-2Eg.normalTitle" = "返回";
+
+/* Class = "UILabel"; text = "Online"; ObjectID = "bcm-S7-d6R"; */
+"bcm-S7-d6R.text" = "唱歌娱乐";
+
+/* Class = "UILabel"; text = "Games Commentary"; ObjectID = "biD-M5-qua"; */
+"biD-M5-qua.text" = "赛事解说";
+
+/* Class = "UILabel"; text = "Sports"; ObjectID = "dXG-7n-jGQ"; */
+"dXG-7n-jGQ.text" = "球赛游戏";
+
+/* Class = "UILabel"; text = "Broadcasting"; ObjectID = "e57-T2-SG1"; */
+"e57-T2-SG1.text" = "表演PK";
+
+/* Class = "UILabel"; text = "Video"; ObjectID = "l8R-AK-pDT"; */
+"l8R-AK-pDT.text" = "视频直播";
+
+/* Class = "UILabel"; text = "Karaoke"; ObjectID = "rj0-VF-1Cd"; */
+"rj0-VF-1Cd.text" = "在线KTV";
+
+/* Class = "UILabel"; text = "Type to Broadcast"; ObjectID = "t9O-V2-yXA"; */
+"t9O-V2-yXA.text" = "创建属于自己的房间";
+
+/* Class = "UIButton"; normalTitle = "Go Live"; ObjectID = "vkg-BM-s9Q"; */
+"vkg-BM-s9Q.normalTitle" = "开始";

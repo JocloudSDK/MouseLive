@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <dimen name="magic_tab_title_size">15sp</dimen>
+    <dimen name="magic_text_size">12sp</dimen>
+    <dimen name="magic_item_width_height">46dp</dimen>
+    <dimen name="magic_seekbar_magrin_left">20dp</dimen>
+</resources>

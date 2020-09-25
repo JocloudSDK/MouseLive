@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SYStickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="effect_selected" translatesAutoresizingMaskIntoConstraints="NO" id="NxM-OI-kA3">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="effect_selectedMuti" translatesAutoresizingMaskIntoConstraints="NO" id="cS5-1v-MG1">
+                        <rect key="frame" x="37" y="0.0" width="13" height="13"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6Z-N6-4dd">
+                        <rect key="frame" x="6" y="6" width="38" height="38"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="effect_download" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-tF-9rM">
+                        <rect key="frame" x="34" y="34" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ncm-sQ-r2i"/>
+                            <constraint firstAttribute="width" constant="16" id="qAt-aO-QE6"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P75-fH-uZe">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="effect_loading" translatesAutoresizingMaskIntoConstraints="NO" id="mFv-vP-k0P">
+                                <rect key="frame" x="16" y="16" width="18" height="18"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mFv-vP-k0P" firstAttribute="centerX" secondItem="P75-fH-uZe" secondAttribute="centerX" id="VRa-rU-gD4"/>
+                            <constraint firstItem="mFv-vP-k0P" firstAttribute="centerY" secondItem="P75-fH-uZe" secondAttribute="centerY" id="blN-7B-ki6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wCB-tF-9rM" secondAttribute="trailing" id="10g-cq-8gD"/>
+                <constraint firstItem="P75-fH-uZe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4GV-ST-l3u"/>
+                <constraint firstAttribute="bottom" secondItem="wCB-tF-9rM" secondAttribute="bottom" id="Aly-yR-wFs"/>
+                <constraint firstAttribute="bottom" secondItem="NxM-OI-kA3" secondAttribute="bottom" id="I48-1a-17z"/>
+                <constraint firstAttribute="trailing" secondItem="NxM-OI-kA3" secondAttribute="trailing" id="IQD-9B-DQz"/>
+                <constraint firstItem="o6Z-N6-4dd" firstAttribute="leading" secondItem="NxM-OI-kA3" secondAttribute="leading" constant="6" id="JqM-Ge-CtG"/>
+                <constraint firstItem="o6Z-N6-4dd" firstAttribute="trailing" secondItem="NxM-OI-kA3" secondAttribute="trailing" constant="-6" id="TDc-7h-SOD"/>
+                <constraint firstAttribute="trailing" secondItem="P75-fH-uZe" secondAttribute="trailing" id="U17-iG-dV5"/>
+                <constraint firstItem="o6Z-N6-4dd" firstAttribute="bottom" secondItem="NxM-OI-kA3" secondAttribute="bottom" constant="-6" id="UGM-6W-0qn"/>
+                <constraint firstItem="P75-fH-uZe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gqZ-hp-xeI"/>
+                <constraint firstItem="NxM-OI-kA3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="onu-Ub-n2f"/>
+                <constraint firstItem="NxM-OI-kA3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q0K-vn-DJX"/>
+                <constraint firstItem="cS5-1v-MG1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sCS-SO-bSU"/>
+                <constraint firstItem="o6Z-N6-4dd" firstAttribute="top" secondItem="NxM-OI-kA3" secondAttribute="top" constant="6" id="tRT-Ja-msx"/>
+                <constraint firstAttribute="bottom" secondItem="P75-fH-uZe" secondAttribute="bottom" id="uWG-XA-9nz"/>
+                <constraint firstAttribute="trailing" secondItem="cS5-1v-MG1" secondAttribute="trailing" id="yWi-WD-9Nt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="downloadImgView" destination="wCB-tF-9rM" id="MhP-lj-9se"/>
+                <outlet property="imgView" destination="o6Z-N6-4dd" id="SVv-Yh-WIn"/>
+                <outlet property="loadingImgView" destination="mFv-vP-k0P" id="CVc-3V-AKQ"/>
+                <outlet property="loadingVIew" destination="P75-fH-uZe" id="O6O-OP-ACw"/>
+                <outlet property="selectedImgView" destination="NxM-OI-kA3" id="61f-we-fyj"/>
+                <outlet property="selectedMutiImgView" destination="cS5-1v-MG1" id="jyo-mg-GxG"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="115"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="effect_download" width="16" height="16"/>
+        <image name="effect_loading" width="18" height="18"/>
+        <image name="effect_selected" width="46" height="46"/>
+        <image name="effect_selectedMuti" width="13" height="13"/>
+    </resources>
+</document>

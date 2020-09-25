@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{10937f99-7607-4e39-b201-a3ffe8bec416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{09f9def7-4500-4c02-8b92-b06bf6c95e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\crash">
+      <UniqueIdentifier>{16107313-6ca4-4dc1-b8df-889eec1e610e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\http">
+      <UniqueIdentifier>{c49f0904-5026-4de6-a9af-5d71878583e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\log">
+      <UniqueIdentifier>{c99815ee-cf26-4112-b801-51906f16222a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\thread">
+      <UniqueIdentifier>{987716e4-d360-483b-98ce-76bf43750b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\websocket">
+      <UniqueIdentifier>{ec479782-1639-4a60-be86-a89ff672db0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\utils">
+      <UniqueIdentifier>{5ad7aedd-f2b2-4873-b658-d5c6821eef8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\json2">
+      <UniqueIdentifier>{addd2853-2f67-44c5-9912-4ecd787defd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui">
+      <UniqueIdentifier>{187b788a-e72f-4fe8-b482-45d132c2f497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\living">
+      <UniqueIdentifier>{fea86243-26b1-440f-931b-76294b297caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\living\ui">
+      <UniqueIdentifier>{3c7ad224-12c6-4f1e-b66d-e99b176383c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\living\logic">
+      <UniqueIdentifier>{cbe2617c-f078-4dd9-9d73-f63f4f21c13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\main">
+      <UniqueIdentifier>{c3339739-0af6-4de9-bf61-cdaeb29e6e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\main\ui">
+      <UniqueIdentifier>{267cc74c-b1ad-4c00-8fd5-2cabdfe0c77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\main\logic">
+      <UniqueIdentifier>{b3200e97-292d-4cdc-a3d9-80b66451c3c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\thunder">
+      <UniqueIdentifier>{079458da-e07f-4c51-902f-5800fd23fd76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\status">
+      <UniqueIdentifier>{f99245aa-1855-4ec7-b898-395144bf05dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\baseui">
+      <UniqueIdentifier>{e53ba716-47b9-4cbc-9231-8191086e35fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\translator">
+      <UniqueIdentifier>{6d111be0-eb25-4955-bf98-52fc9587770e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\setting">
+      <UniqueIdentifier>{cd7f0541-be61-4aac-a5f7-1aba6c19684b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="src\common\download">
+      <UniqueIdentifier>{b6fb0811-baec-4071-9c07-8cbed5ecb13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\taskQueue">
+      <UniqueIdentifier>{0f27328e-b431-4763-bf21-5aa0fce45736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\timer">
+      <UniqueIdentifier>{b85d66bd-f8d2-4eef-8f2c-ac2580e918b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\websocket\Invite">
+      <UniqueIdentifier>{86f90ee9-d4be-44fd-8e80-56379fe503bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\sdk">
+      <UniqueIdentifier>{6257466d-a97a-4ecb-9881-096fb096f83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\sdk\thunderbolt">
+      <UniqueIdentifier>{25876f43-da84-4cd2-b4b0-a782a8b451f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\sdk\chatroom">
+      <UniqueIdentifier>{77cc792b-712b-487b-875a-b604c728d7d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="src\common\qss">
+      <UniqueIdentifier>{2baf03e9-bb59-43a5-8611-944e5fac93fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\sdk\beauty">
+      <UniqueIdentifier>{2701d9d1-19a5-4c36-b6f1-32a03f182faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mainui\living\ui\beauty">
+      <UniqueIdentifier>{7c7d7013-f316-4ab5-9a37-ebe67a451fb5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\WebSocketClient.cpp">
+      <Filter>src\common\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="common\crash\CCrashStack.cpp">
+      <Filter>src\common\crash</Filter>
+    </ClCompile>
+    <ClCompile Include="common\crash\Msjexhnd.cpp">
+      <Filter>src\common\crash</Filter>
+    </ClCompile>
+    <ClCompile Include="common\thread\thread.cpp">
+      <Filter>src\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="common\utils\String.cpp">
+      <Filter>src\common\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log\log.cpp">
+      <Filter>src\common\log</Filter>
+    </ClCompile>
+    <ClCompile Include="common\log\logger.cpp">
+      <Filter>src\common\log</Filter>
+    </ClCompile>
+    <ClCompile Include="common\json2\RapidjsonHelper.cpp">
+      <Filter>src\common\json2</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\main\ui\MainUI.cpp">
+      <Filter>src\mainui\main\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\thunder\ThunderManager.cpp">
+      <Filter>src\common\thunder</Filter>
+    </ClCompile>
+    <ClCompile Include="common\status\Status.cpp">
+      <Filter>src\common\status</Filter>
+    </ClCompile>
+    <ClCompile Include="common\translate\Translate.cpp">
+      <Filter>src\common\translator</Filter>
+    </ClCompile>
+    <ClCompile Include="common\setting\Setting.cpp">
+      <Filter>src\common\setting</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\main\ui\RoomInfoCellUI.cpp">
+      <Filter>src\mainui\main\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\download\Download.cpp">
+      <Filter>src\common\download</Filter>
+    </ClCompile>
+    <ClCompile Include="common\download\DownloadAvator.cpp">
+      <Filter>src\common\download</Filter>
+    </ClCompile>
+    <ClCompile Include="common\download\DownloadImpl.cpp">
+      <Filter>src\common\download</Filter>
+    </ClCompile>
+    <ClCompile Include="common\http\HttpClient.cpp">
+      <Filter>src\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\baseui\QPixmapUtil.cpp">
+      <Filter>src\mainui\baseui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\taskQueue\Work.cpp">
+      <Filter>src\common\taskQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="common\taskQueue\TaskQueue.cpp">
+      <Filter>src\common\taskQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\main\logic\MainHttpLogic.cpp">
+      <Filter>src\mainui\main\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\logic\LivingHttpLogic.cpp">
+      <Filter>src\mainui\living\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\LivingDialogUI.cpp">
+      <Filter>src\mainui\living\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\ClientEquipmentUI.cpp">
+      <Filter>src\mainui\living\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="common\timer\Timer.cpp">
+      <Filter>src\common\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\WSService.cpp">
+      <Filter>src\common\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\CSWSService.cpp">
+      <Filter>src\common\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\CCService.cpp">
+      <Filter>src\common\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\LiveManager.cpp">
+      <Filter>src\common\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\Invite\LiveBeInvited.cpp">
+      <Filter>src\common\websocket\Invite</Filter>
+    </ClCompile>
+    <ClCompile Include="common\websocket\Invite\LiveInvite.cpp">
+      <Filter>src\common\websocket\Invite</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\thunderbolt\MediaManager.cpp">
+      <Filter>src\mainui\sdk\thunderbolt</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\AnchorCellUI.cpp">
+      <Filter>src\mainui\living\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\UserCellUI.cpp">
+      <Filter>src\mainui\living\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\ThunderMeetUI.cpp">
+      <Filter>src\mainui\living\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\baseui\MessageBoxNormalUI.cpp">
+      <Filter>src\mainui\baseui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\baseui\MessageBoxPKUI.cpp">
+      <Filter>src\mainui\baseui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\chatroom\ChatRoomManager.cpp">
+      <Filter>src\mainui\sdk\chatroom</Filter>
+    </ClCompile>
+    <ClCompile Include="common\qss\QssLoad.cpp">
+      <Filter>src\common\qss</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\beauty\BeautyManager.cpp">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\BeautyUI.cpp">
+      <Filter>src\mainui\living\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\beauty\OrangeFilterRender.cpp">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\beauty\OrangeHelper.cpp">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\beauty\pathutils.cpp">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\beauty\BeautyCellUI.cpp">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\beauty\MeifuUI.cpp">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\beauty\ShoushiUI.cpp">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\beauty\TiezhiUI.cpp">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\beauty\WuguanUI.cpp">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\beauty\UEvent.cpp">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\sdk\beauty\GLRuntimeEnvironment.cpp">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="mainui\living\ui\beauty\LvjingUI.cpp">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="common\websocket\WebSocketClient.h">
+      <Filter>src\common\websocket</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\main\ui\MainUI.h">
+      <Filter>src\mainui\main\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\main\ui\RoomInfoCellUI.h">
+      <Filter>src\mainui\main\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="common\download\DownloadImpl.h">
+      <Filter>src\common\download</Filter>
+    </QtMoc>
+    <QtMoc Include="common\http\HttpClient.h">
+      <Filter>src\common\http</Filter>
+    </QtMoc>
+    <QtMoc Include="common\taskQueue\TaskQueue.h">
+      <Filter>src\common\taskQueue</Filter>
+    </QtMoc>
+    <QtMoc Include="common\taskQueue\Work.h">
+      <Filter>src\common\taskQueue</Filter>
+    </QtMoc>
+    <QtMoc Include="common\taskQueue\Task.h">
+      <Filter>src\common\taskQueue</Filter>
+    </QtMoc>
+    <QtMoc Include="common\taskQueue\Thread.h">
+      <Filter>src\common\taskQueue</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\main\logic\MainHttpLogic.h">
+      <Filter>src\mainui\main\logic</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\logic\LivingHttpLogic.h">
+      <Filter>src\mainui\living\logic</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\LivingDialogUI.h">
+      <Filter>src\mainui\living\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\ClientEquipmentUI.h">
+      <Filter>src\mainui\living\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="common\timer\Timer.h">
+      <Filter>src\common\timer</Filter>
+    </QtMoc>
+    <QtMoc Include="common\websocket\WSService.h">
+      <Filter>src\common\websocket</Filter>
+    </QtMoc>
+    <QtMoc Include="common\websocket\Invite\LiveBeInvited.h">
+      <Filter>src\common\websocket\Invite</Filter>
+    </QtMoc>
+    <QtMoc Include="common\websocket\LiveManager.h">
+      <Filter>src\common\websocket</Filter>
+    </QtMoc>
+    <QtMoc Include="common\websocket\Invite\LiveInvite.h">
+      <Filter>src\common\websocket\Invite</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\sdk\thunderbolt\MediaManager.h">
+      <Filter>src\mainui\sdk\thunderbolt</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\AnchorCellUI.h">
+      <Filter>src\mainui\living\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\UserCellUI.h">
+      <Filter>src\mainui\living\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\ThunderMeetUI.h">
+      <Filter>src\mainui\living\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\baseui\MessageBoxNormalUI.h">
+      <Filter>src\mainui\baseui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\baseui\MessageBoxPKUI.h">
+      <Filter>src\mainui\baseui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\sdk\chatroom\ChatRoomManager.h">
+      <Filter>src\mainui\sdk\chatroom</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\BeautyUI.h">
+      <Filter>src\mainui\living\ui</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\beauty\BeautyCellUI.h">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\beauty\MeifuUI.h">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\beauty\ShoushiUI.h">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\beauty\TiezhiUI.h">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\beauty\WuguanUI.h">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </QtMoc>
+    <QtMoc Include="mainui\living\ui\beauty\LvjingUI.h">
+      <Filter>src\mainui\living\ui\beauty</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\MainUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\LivingUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\RoomInfoCellUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\NoEquipmentUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\ClientEquipmentUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\AnchorCellUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\UserCellUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\MessageBoxNormalUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\MessageBoxPKUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\BeautyUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\BeautyCellUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\MeifuUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\WuguanUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\TiezhiUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\ShoushiUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\lvjingUI.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="joy.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\crash\CCrashStack.h">
+      <Filter>src\common\crash</Filter>
+    </ClInclude>
+    <ClInclude Include="common\crash\Msjexhnd.h">
+      <Filter>src\common\crash</Filter>
+    </ClInclude>
+    <ClInclude Include="common\thread\thread.h">
+      <Filter>src\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\Settings.h">
+      <Filter>src\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\String.h">
+      <Filter>src\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\log\loggerExt.h">
+      <Filter>src\common\log</Filter>
+    </ClInclude>
+    <ClInclude Include="common\log\log.h">
+      <Filter>src\common\log</Filter>
+    </ClInclude>
+    <ClInclude Include="common\json2\RapidjsonHelper.h">
+      <Filter>src\common\json2</Filter>
+    </ClInclude>
+    <ClInclude Include="common\thunder\ThunderManager.h">
+      <Filter>src\common\thunder</Filter>
+    </ClInclude>
+    <ClInclude Include="common\status\Status.h">
+      <Filter>src\common\status</Filter>
+    </ClInclude>
+    <ClInclude Include="common\translate\Translate.h">
+      <Filter>src\common\translator</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\Constans.h">
+      <Filter>src\mainui</Filter>
+    </ClInclude>
+    <ClInclude Include="common\setting\Setting.h">
+      <Filter>src\common\setting</Filter>
+    </ClInclude>
+    <ClInclude Include="common\download\Download.h">
+      <Filter>src\common\download</Filter>
+    </ClInclude>
+    <ClInclude Include="common\download\DownloadAvator.h">
+      <Filter>src\common\download</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\baseui\QPixmapUtil.h">
+      <Filter>src\mainui\baseui</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\AppInfo.h">
+      <Filter>src\mainui</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\LogicModel.h">
+      <Filter>src\mainui</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\RoomInfo.h">
+      <Filter>src\mainui</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\UserInfo.h">
+      <Filter>src\mainui</Filter>
+    </ClInclude>
+    <ClInclude Include="common\utils\Singleton.h">
+      <Filter>src\common\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="common\websocket\WSModel.h">
+      <Filter>src\common\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="common\websocket\CSWSService.h">
+      <Filter>src\common\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="common\websocket\CCService.h">
+      <Filter>src\common\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="common\websocket\LiveManagerObserver.h">
+      <Filter>src\common\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="common\websocket\Invite\LiveInviteItem.h">
+      <Filter>src\common\websocket\Invite</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\qss\QssLoad.h">
+      <Filter>src\common\qss</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\OrangeFilterRender.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\OrangeHelper.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\pathutils.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\GLRuntimeEnvironment.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\UEvent.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\CSLock.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="mainui\sdk\beauty\BeautyManager.h">
+      <Filter>src\mainui\sdk\beauty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="language\en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="language\zh.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\app_logo_32x32.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="joy.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

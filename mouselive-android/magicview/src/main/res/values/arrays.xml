@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="magic_view_title_array">
+        <item>美颜</item>
+        <item>滤镜</item>
+        <item>整形</item>
+        <item>贴纸</item>
+        <item>手势</item>
+    </string-array>
+
+    <string-array name="magic_view_filter_show_name_array">
+        <item>假日</item>
+        <item>清晰</item>
+        <item>暖阳</item>
+        <item>清晰</item>
+        <item>粉嫩</item>
+    </string-array>
+
+    <string-array name="magic_view_advanced_show_name_array">
+        <item>窄脸</item>
+        <item>小脸</item>
+        <item>瘦颧骨</item>
+        <item>额高</item>
+        <item>额宽</item>
+        <item>大眼</item>
+        <item>眼距</item>
+        <item>眼角</item>
+        <item>瘦鼻</item>
+        <item>长鼻</item>
+        <item>窄鼻梁</item>
+        <item>小嘴</item>
+        <item>嘴位</item>
+        <item>下巴</item>
+    </string-array>
+
+</resources>

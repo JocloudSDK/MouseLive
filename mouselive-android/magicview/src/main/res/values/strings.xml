@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="magic_data_loading">美颜数据正在加载，请等候</string>
+    <string name="magic_data_loading_failure">美颜数据加载失败</string>
+    <string name="magic_license_invalid">美颜特效包鉴权失败</string>
+    <string name="magic_license_check_date">请检查美颜特效包鉴权有效期日期</string>
+    <string name="magic_original">原图</string>
+    <string name="magic_smoothen">磨皮</string>
+    <string name="magic_whiten">美白</string>
+    <string name="magic_default_value">0</string>
+    <string name="magic_reset">重置</string>
+    <string name="magic_close_tip">关闭特效</string>
+    <string name="magic_face_basic">基础整形</string>
+    <string name="magic_face_advanced">高级整形</string>
+    <string name="magic_face_overall">整体</string>
+    <string name="magic_description">美颜</string>
+
+</resources>

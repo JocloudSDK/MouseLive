@@ -1,0 +1,72 @@
+QLabel {
+	font-family:PingFangSC-Regular;
+}
+
+QPushButton {
+	border: 2px;
+}
+
+QPushButton:pressed {
+	border: 1px dotted black;
+}
+
+QCheckBox::indicator::checked {
+	image: url(:/beauty/zheng_gou);
+}
+
+
+QSlider::groove:horizontal {
+background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #0041FF, stop:1 #7FBAFF);
+height: 5px;
+}
+
+QSlider::sub-page:horizontal {
+background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #0041FF, stop:1 #7FBAFF);
+border: 1px solid #4A708B;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+background: #ececec;
+border: 0px solid #777;
+height: 10px;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, 
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+    width: 11px;
+    border-radius: 5px;
+	border:2px solid #0041FF;
+	margin:-5px 0;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA, 
+    stop:0.778409 rgba(255, 255, 255, 255));
+    width: 11px;
+    border-radius: 5px;
+	border:2px solid #0041FF;
+	margin:-5px 0;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #dddddd;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}
+

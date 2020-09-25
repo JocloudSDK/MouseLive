@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/upload_log" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/app_version"
+                    android:textColor="#252C2B"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvUID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/fadeback_uid"
+                    android:textColor="#252C2B"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/input_content_tip1"
+                    android:textColor="#252C2B"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <EditText
+                        android:id="@+id/et_feedback_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_feedback_content"
+                        android:gravity="left|top"
+                        android:hint="@string/input_content_tip2"
+                        android:inputType="textMultiLine"
+                        android:maxLength="500"
+                        android:padding="8dp"
+                        android:textColor="#252C2B"
+                        android:textColorHint="#80252c2b"
+                        android:textSize="12sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvPhotos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        tools:listitem="@layout/item_photos" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/input_contacts_tip1"
+                    android:textColor="#252C2B"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/bg_feedback_content"
+                    android:hint="@string/input_contacts_tip2"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#252C2B"
+                    android:textColorHint="#80252c2b"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_feedback"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="64dp"
+                    android:background="@drawable/selector_button_fill"
+                    android:text="@string/submit_upload"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

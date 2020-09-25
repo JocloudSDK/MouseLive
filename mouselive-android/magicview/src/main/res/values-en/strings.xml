@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="magic_data_loading">Beauty data is loading, please wait</string>
+    <string name="magic_data_loading_failure">Beauty data loading failed</string>
+    <string name="magic_license_invalid">Beauty effect athentication failed</string>
+    <string name="magic_license_check_date">Please check beauty effect athentication valid date</string>
+    <string name="magic_original">Original</string>
+    <string name="magic_smoothen">Smoothen</string>
+    <string name="magic_whiten">Whiten</string>
+    <string name="magic_default_value">0</string>
+    <string name="magic_reset">reset</string>
+    <string name="magic_close_tip">close effect</string>
+    <string name="magic_face_basic">Basic</string>
+    <string name="magic_face_advanced">Advanced</string>
+    <string name="magic_face_overall">Overall</string>
+    <string name="magic_description">Beauty</string>
+
+</resources>

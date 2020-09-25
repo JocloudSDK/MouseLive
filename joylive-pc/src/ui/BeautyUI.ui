@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BeautyUIClass</class>
+ <widget class="QWidget" name="BeautyUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>244</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="shoushiBtn">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>10</y>
+     <width>45</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>手势</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tiezhiBtn">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>144</x>
+     <y>10</y>
+     <width>45</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>贴纸</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="wuguanBtn">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>五官</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="meifuBtn">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>10</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 65, 255);</string>
+   </property>
+   <property name="text">
+    <string>美肤</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lvjingBtn">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>10</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>滤镜</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

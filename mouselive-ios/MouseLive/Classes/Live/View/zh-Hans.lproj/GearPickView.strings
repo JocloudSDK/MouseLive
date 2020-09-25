@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = " 档位"; ObjectID = "ERD-qR-eLq"; */
+//"ERD-qR-eLq.text" = " 档位";
+
+/* Class = "UIButton"; normalTitle = "确定"; ObjectID = "cr4-n2-IkT"; */
+"cr4-n2-IkT.normalTitle" = "确定";
+
+/* Class = "UIButton"; normalTitle = "取消"; ObjectID = "rcY-9f-o1h"; */
+"rcY-9f-o1h.normalTitle" = "取消";

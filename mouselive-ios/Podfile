@@ -1,0 +1,44 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/yyqapm/specs.git'
+
+def SClouds()
+  pod 'thunder',                      '2.7.0'
+  pod 'Hummer/ChatRoom',              '2.6.107'
+end
+
+#聚联云的工具链，开发者集成的时候不需要关心
+def ThirdPods()
+  pod 'AFNetworking',                 '~> 3.2.1'
+  pod 'MJRefresh',                    '~> 3.1.1'
+  pod 'MJExtension',                  '~> 3.0.10'
+  pod 'Masonry',                      '~> 1.1'
+  pod 'YYCategories',                 '1.0.4'
+  pod 'YYWebImage',                   '1.0.5'
+  pod 'YYModel',                      '1.0.4'
+  pod 'crashreportsdk/staticCore',    '2.0.5'
+  pod 'SocketRocket' ,                '~> 0.5.1'
+  pod "PromiseKit"   ,                '~> 6.8'
+  pod "PLeakSniffer",                 '0.1.0'
+  pod 'AliPlayerSDK_iOS',             '5.1.1'
+  pod 'TZImagePickerController'
+
+end
+
+def LocalPods()
+  pod 'SYLiteDevToolKit',             :path => './LocalPods/SYLiteDevToolKit'
+  pod 'SYFeedbackComponent',          :path => './LocalPods/SYFeedbackComponent'
+  pod 'SYCrashreportSetup',           :path => './LocalPods/SYCrashreportSetup'
+end
+
+def SYToolsChain()
+  ThirdPods()
+  LocalPods()
+end
+
+target 'MouseLive' do
+  SClouds()
+  SYToolsChain()
+end

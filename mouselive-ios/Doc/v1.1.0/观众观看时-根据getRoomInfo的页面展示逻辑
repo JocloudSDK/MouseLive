@@ -1,0 +1,240 @@
+// 视频下
+// 跨房间连麦
+POST:
+URL:http://funapi.sunclouds.com/fun/api/v1/getRoomInfo
+Params:{
+    RType = 1;
+    Rid = 64113634;
+    Uid = 31780591;
+}
+Response:{
+    Code = 5000;
+    Data =     {
+        RoomInfo =         {
+            AppId = 100;
+            CreateTm = "2020-03-26 12:22:11.577441";
+            RChatId = 2317988785;
+            RCount = 1;
+            RCover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/room/006.jpg";
+            RLevel = 0;
+            RLiving = 1;
+            RName = Taoyuan;
+            RNotice = "";
+            ROwner =             {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/009.jpg";
+                LinkRid = 0;
+                LinkUid = 0;
+                MicEnable = 0;
+                NickName = Audrey;
+                Uid = 25591240;
+            };
+            RType = 1;
+            Rid = 64113634;
+            UpdateTm = "2020-03-26 12:22:12.705779";
+        };
+        UserList =         (
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/009.jpg";
+                LinkRid = 65978333;
+                LinkUid = 13404270;
+                MicEnable = 1;
+                NickName = Audrey;
+                Uid = 25591240;
+            }
+        );
+    };
+    Msg = OK;
+}
+
+// 同房间连麦
+***************  Start  ***************
+POST:
+URL:http://funapi.sunclouds.com/fun/api/v1/getRoomInfo
+Params:{
+    RType = 1;
+    Rid = 65978333;
+    Uid = 31780591;
+}
+Response:{
+    Code = 5000;
+    Data =     {
+        RoomInfo =         {
+            AppId = 100;
+            CreateTm = "2020-03-26 12:22:00.925155";
+            RChatId = 2317988784;
+            RCount = 2;
+            RCover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/room/007.jpg";
+            RLevel = 0;
+            RLiving = 1;
+            RName = Wuzhishan;
+            RNotice = "";
+            ROwner =             {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 0;
+                LinkUid = 0;
+                MicEnable = 0;
+                NickName = Harvey;
+                Uid = 13404270;
+            };
+            RType = 1;
+            Rid = 65978333;
+            UpdateTm = "2020-03-26 12:25:14.838499";
+        };
+        UserList =         (
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/009.jpg";
+                LinkRid = 65978333;
+                LinkUid = 13404270;
+                MicEnable = 1;
+                NickName = Warren;
+                Uid = 16407019;
+            },
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 65978333;
+                LinkUid = 16407019;
+                MicEnable = 1;
+                NickName = Harvey;
+                Uid = 13404270;
+            }
+        );
+    };
+    Msg = OK;
+}
+***************   End   ***************
+
+// 没有连麦
+POST:
+URL:http://funapi.sunclouds.com/fun/api/v1/getRoomInfo
+Params:{
+    RType = 1;
+    Rid = 65978333;
+    Uid = 31780591;
+}
+Response:{
+    Code = 5000;
+    Data =     {
+        RoomInfo =         {
+            AppId = 100;
+            CreateTm = "2020-03-26 12:22:00.925155";
+            RChatId = 2317988784;
+            RCount = 1;
+            RCover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/room/007.jpg";
+            RLevel = 0;
+            RLiving = 1;
+            RName = Wuzhishan;
+            RNotice = "";
+            ROwner =             {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 0;
+                LinkUid = 0;
+                MicEnable = 0;
+                NickName = Harvey;
+                Uid = 13404270;
+            };
+            RType = 1;
+            Rid = 65978333;
+            UpdateTm = "2020-03-26 12:22:02.197907";
+        };
+        UserList =         (
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 0;
+                LinkUid = 0;
+                MicEnable = 1;
+                NickName = Harvey;
+                Uid = 13404270;
+            }
+        );
+    };
+    Msg = OK;
+}
+////////////////////////////////////////////////////////////
+
+// 逻辑
+如果是视频房间 只需要取得 UserList 的 user 是主播的数据，即 Uid = 主播的 uid
+        1.1 如果 linkRid 是当前房间的，就是同房间连麦，如 主播 uid = 13404270, Rid = 65978333;
+        UserList =         (
+            // 这条数据就是不用看的
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/009.jpg";
+                LinkRid = 65978333;
+                LinkUid = 13404270;
+                MicEnable = 1;
+                NickName = Warren;
+                Uid = 16407019;
+            },
+
+            // 这条数据的 uid = 主播的 uid，使用这条数据，还是同房间的
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 65978333;
+                LinkUid = 16407019;  // 连麦观众的 uid
+                MicEnable = 1;
+                NickName = Harvey;
+                Uid = 13404270;
+            }
+        );
+        config  anchorMainUid = 主播 uid，anchorMainRid = 主播 rid， anchorSecondUid = LinkUid anchorSecondRid = LinkRid 
+        1.2 如果 不是当前房间的就是跨房间连麦 , Uid = 25591240, Rid = 64113634;
+        UserList =         (
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/009.jpg";
+                LinkRid = 65978333;
+                LinkUid = 13404270;
+                MicEnable = 1;
+                NickName = Audrey;
+                Uid = 25591240;
+            }
+        );
+        config  anchorMainUid = 主播 uid，anchorMainRid = 主播 rid， anchorSecondUid = LinkUid anchorSecondRid = LinkRid 
+        1.3 如果没有连麦
+        UserList =         (
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 0;
+                LinkUid = 0;
+                MicEnable = 1;
+                NickName = Harvey;
+                Uid = 13404270;
+            }
+        );
+        config  anchorMainUid = 主播 uid，anchorMainRid = 主播 rid， anchorSecondUid = nil anchorSecondRid = nil 
+
+
+如果语音房， 需要过滤 UserList 的 主播数据，即 我们只取 Uid != 主播的 uid
+        1.1 如果 linkRid 是当前房间的，就是同房间连麦，如 主播 uid = 13404270, Rid = 65978333;
+        UserList =         (
+            // 这条是其他人连连的数据，要根据 uid 刷上头像，根据 micEnable 是否是闭麦中，判断下麦的闭麦按钮 
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/009.jpg";
+                LinkRid = 65978333;
+                LinkUid = 13404270;
+                MicEnable = 1;
+                NickName = Warren;
+                Uid = 16407019;
+            },
+
+            // 这条数据是主播数据，不用看的
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 65978333;
+                LinkUid = 16407019;  // 连麦观众的 uid
+                MicEnable = 1;
+                NickName = Harvey;
+                Uid = 13404270;
+            }
+        );
+        config  anchorMainUid = 主播 uid，anchorMainRid = 主播 rid， anchorSecondUid = nil anchorSecondRid = nil 
+        1.2 如果没有连麦
+        UserList =         (
+                        {
+                Cover = "http://sensedemo.oss-cn-qingdao.aliyuncs.com/fun/cover/user/006.jpg";
+                LinkRid = 0;
+                LinkUid = 0;
+                MicEnable = 1;
+                NickName = Harvey;
+                Uid = 13404270;
+            }
+        );
+        config  anchorMainUid = 主播 uid，anchorMainRid = 主播 rid， anchorSecondUid = nil anchorSecondRid = nil 

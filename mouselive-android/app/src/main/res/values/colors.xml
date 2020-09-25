@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_scheme1">#FFC107</color>
+    <color name="color_scheme2">#FF9800</color>
+    <color name="color_scheme3">#FF5722</color>
+
+    <color name="room_gongxian_color">#3367FF</color>
+    <color name="color_item_pressed">#D6D6D6</color>
+    <color name="msg_office">#FFFFFF</color>
+    <color name="msg_user_other">#FFFFFF</color>
+    <color name="msg_user_mime">#FFDA81</color>
+    <color name="room_msg_item_background">#33000000</color>
+    <color name="room_level">#3367FF</color>
+    <color name="room_all_mute">#FF6800</color>
+    <color name="room_dialog_cancel">#ff616161</color>
+    <color name="create_room_text">#ff666666</color>
+    <color name="room_people_text">#b3ffffff</color>
+    <color name="main_menu_text_selected">#ff0041ff</color>
+    <color name="main_menu_text_unselected">#ff3367ff</color>
+    <color name="voice_changer">#3367FF</color>
+    <color name="main_room_tab_text_selected">#ff252c2b</color>
+    <color name="main_room_tab_text_unselected">#80000000</color>
+    <color name="more_menu_text">#ccffffff</color>
+</resources>

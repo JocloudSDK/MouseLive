@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuMain"
+        android:icon="@drawable/selector_main_menu_main"
+        android:title="@string/main_menu_main_text" />
+
+<!--    <item-->
+<!--        android:id="@+id/menuVideo"-->
+<!--        android:icon="@drawable/selector_main_menu_video"-->
+<!--        android:title="@string/main_menu_main_video" />-->
+
+    <item
+        android:id="@+id/empty"
+        android:title="" />
+
+    <item
+        android:id="@+id/menuFadeback"
+        android:icon="@drawable/selector_main_menu_feedback"
+        android:title="@string/main_menu_main_fadeback" />
+
+<!--    <item-->
+<!--        android:id="@+id/menuMine"-->
+<!--        android:icon="@drawable/selector_main_menu_mine"-->
+<!--        android:title="@string/main_menu_mine_text" />-->
+</menu>

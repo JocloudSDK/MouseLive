@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvRoomId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/info_roomid"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/info_uid"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvTxNetQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/net_tx_quality"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvTxQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/bitrates_up"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvTxQualityM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/bitrates_m"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvRxNetQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/net_rx_quality"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvRxQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/bitrates_down"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+
+    <TextView
+        android:id="@+id/tvRxQualityM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/bitrates_m"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/room_contributions_text_size" />
+</merge>

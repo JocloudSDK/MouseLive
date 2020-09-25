@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:id="@+id/llUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/shape_room_owner_info_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="2dp">
+
+        <ImageView
+            android:id="@+id/ivRoomOwner"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/default_user_icon" />
+
+        <TextView
+            android:id="@+id/tvOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="jerry"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/room_contributions_text_size" />
+    </LinearLayout>
+</merge>

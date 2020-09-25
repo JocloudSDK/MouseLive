@@ -1,0 +1,11 @@
+QLabel {
+	font-family:PingFangSC-Regular;
+}
+
+QPushButton {
+	border: 2px;
+}
+
+QPushButton:pressed {
+	border: 1px dotted black;
+}

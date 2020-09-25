@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnchorCellUIClass</class>
+ <widget class="QWidget" name="AnchorCellUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>44</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="nickLabel">
+   <property name="geometry">
+    <rect>
+     <x>53</x>
+     <y>14</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(51,51,51);</string>
+   </property>
+   <property name="text">
+    <string>xxxxxxxx</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pkBtn">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>12</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,65,255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>PK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="anchorGraphicsView">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>7</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pkLabel">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>12</y>
+     <width>54</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(205, 206, 214);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

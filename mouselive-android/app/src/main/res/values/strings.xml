@@ -1,0 +1,190 @@
+<resources>
+    <string name="app_name">聚联云泛娱乐</string>
+
+    <string name="main_project_name">泛娱乐直播解决方案</string>
+    <string name="main_version">V%s</string>
+    <string name="main_version2">Build：%s %s TB：%s HMR：%s</string>
+
+    <string name="request_error_title">权限申请</string>
+    <string name="request_external_storage">APP需要SD卡读写权限来存储日志信息，请先允许。</string>
+    <string name="request_live">APP进行音视频功能，需要您的摄像头、麦克权限以及SD卡存储权限，请先允许。</string>
+
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="reject">拒绝</string>
+    <string name="agree">同意</string>
+    <string name="requesting_chating">请求连麦中(%ds)...</string>
+    <string name="send">发送</string>
+
+    <string name="room_publish_mode_rtc">当前是实时流RTC模式</string>
+    <string name="room_publish_mode_cdn">当前是CDN模式</string>
+    <string name="owner_leave_monment">主播暂时离开一下下，很快回来哦！</string>
+    <string name="room_list_dimiss">无效的房间信息</string>
+    <string name="join_room_fail">加入房间失败(%s)</string>
+    <string name="room_list_item_name">%s(%s)</string>
+    <string name="room_info_top_monery">贡献榜</string>
+    <string name="room_say_something">聊两句~</string>
+    <string name="room_all_no_typing">全部禁言</string>
+    <string name="room_all_yes_typing">全部解禁</string>
+    <string name="room_user_menu_up">升管</string>
+    <string name="room_user_menu_down">降管</string>
+    <string name="room_user_menu_mute">禁言</string>
+    <string name="room_user_menu_no_mute">开言</string>
+    <string name="room_user_menu_kick_out">踢出</string>
+    <string name="room_toggle_camera">切换镜头</string>
+    <string name="room_toggle_mirror">镜像</string>
+    <string name="room_toggle_face">魔法</string>
+    <string name="room_sharpness">档位</string>
+    <string name="room_pk_member_dialog_title">主播列表</string>
+    <string name="room_member_dialog_title">在线观众</string>
+    <string name="room_members_level1">(主播)</string>
+    <string name="room_members_level2">(管理员)</string>
+    <string name="room_members_statue_mute">(禁言中)</string>
+    <string name="room_close_lianmai">断开</string>
+    <string name="room_in_lianmai_request">对面主播正在连麦中，请稍后再试</string>
+    <string name="room_refult_lianmai_request">主播拒绝了你的连麦申请</string>
+    <string name="room_add_role_error">升管失败</string>
+    <string name="room_remote_role_error">降管失败</string>
+    <string name="room_mute_error">禁言失败</string>
+    <string name="room_unmute_error">开言失败</string>
+    <string name="room_kick_error">踢出失败</string>
+    <string name="room_xiamai_error">下麦失败</string>
+    <string name="join_room">来了</string>
+    <string name="leave_room">离开</string>
+    <string name="user_kick_out">被踢出房间</string>
+    <string name="user_mute">被禁言</string>
+    <string name="user_unmute">被解禁</string>
+    <string name="user_muting">禁言中</string>
+    <string name="user_add_role">已是管理员</string>
+    <string name="user_remove_role">已不是管理员</string>
+    <string name="office_notie">聚联云提供低延时高质量音视频SDK，以及实时聊天SDK。点击房间内的按钮试试吧！ 访问官网www.jocloud.com了解更多~</string>
+    <string name="msg_text_mine">我 %s</string>
+    <string name="msg_kick_out_me">您已被踢出房间</string>
+    <string name="magic_reset">重置</string>
+    <string name="magic_load_data_loading">美颜数据正在加载，请等候</string>
+    <string name="magic_load_data_fail">美颜数据加载失败</string>
+    <string name="room_net_connting_message">网络连接中，请稍后</string>
+    <string name="room_magic_original">原图</string>
+    <string name="room_toggle_mic_error">切换麦克风失败</string>
+
+    <string name="voice_wather">在线：%s</string>
+    <string name="voice_all_mic_off">全部闭麦</string>
+    <string name="voice_all_mic_on">全部开麦</string>
+    <string name="voice_user_name_default">%s号麦</string>
+    <string name="voice_user_mai_up">上麦</string>
+    <string name="voice_user_mai_down">下麦</string>
+    <string name="voice_user_mai_down2">下麦</string>
+    <string name="voice_user_dialog_mute">闭麦</string>
+    <string name="voice_user_dialog_no_mute">开麦</string>
+    <string name="voice_refult_shangmai_request">房主拒绝了你的上麦申请</string>
+    <string name="voice_refult_shangmai_fill">座位已满，已拒绝</string>
+    <string name="voice_changer_title">变声</string>
+    <string name="voice_changer_ear_on">耳返开启</string>
+    <string name="voice_changer_ear_off">耳返关闭</string>
+    <string name="voice_changer_tip">“带上耳机效果更佳哦”</string>
+    <string name="voice_shangmai_tip">已上座</string>
+    <string name="voice_xiamai_tip">已离开坐席</string>
+
+    <string name="ktv_bottom_menu1">公聊</string>
+    <string name="ktv_bottom_menu2">观众(%d)</string>
+    <string name="ktv_bottom_menu3">排麦</string>
+    <string name="ktv_empty_musics">暂无人点歌</string>
+
+    <string name="ws_disconnect">WS断开连接</string>
+    <string name="apply_chat_title">%s申请连麦</string>
+    <string name="room_owner_leave_tip">房主直播已结束</string>
+    <string name="room_join_fail_tip">进入房间失败，请再试一遍</string>
+    <string name="room_apply_chat_fail">连麦申请失败</string>
+    <string name="room_apply_chat_disconnect">连麦连接失败</string>
+    <string name="room_cancel_chat_fail">取消连麦失败，请在试一次。</string>
+    <string name="room_apply_chat_disconnected">您已经离开房间</string>
+    <string name="video_definition">清晰度</string>
+    <string name="reject_chatting">%s拒绝了您的连麦</string>
+
+    <string name="info_roomid">RoomId：%s</string>
+    <string name="info_uid">UID：%s</string>
+    <string name="net_tx_quality">上行质量：%s</string>
+    <string name="net_rx_quality">下行质量：%s</string>
+    <string name="bitrates_up">上行：%dkb</string>
+    <string name="bitrates_m">(A：%dkb/ V：%dkb)</string>
+    <string name="bitrates_down">下行：%dkb</string>
+    <string name="net_quality1">极好</string>
+    <string name="net_quality2">良好</string>
+    <string name="net_quality3">一般</string>
+    <string name="net_quality4">较差</string>
+    <string name="net_quality5">很差</string>
+    <string name="net_quality6">断开</string>
+    <string name="net_unknown">未知</string>
+
+    <string name="login_fail">登录失败，请重试</string>
+    <string name="query_token_fail">Token获取失败，请重试</string>
+    <string name="sdk_login_fail">SDK登录失败，请重试</string>
+    <string name="network_fail">网络异常，请检查网络连接</string>
+
+    <string name="create_room_text1">请选择开播类型</string>
+    <string name="create_room_text2">创建属于自己的房间</string>
+    <string name="create_room_start">开始</string>
+    <string name="create_room_back">返回</string>
+    <string name="create_room_selecte_publish_mode">选择视频模式</string>
+
+    <string name="main_menu_main_text">直播</string>
+    <string name="main_menu_main_video">小视频</string>
+    <string name="main_menu_main_fadeback">反馈</string>
+    <string name="main_menu_mine_text">个人信息</string>
+
+    <string name="request_lianmai">想与您连麦</string>
+    <string name="request_pk">想与您PK</string>
+    <string name="request_shangmai">申请上座</string>
+
+    <string name="setting_group_title_are">区域</string>
+
+    <string name="change_are">修改区域，需要重新打开APP</string>
+    <string name="setting_uid">UID:%s</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_title">设置</string>
+    <string name="setting_is_china">国内</string>
+    <string name="setting_token_title">Token</string>
+    <string name="setting_token_content">超时时间(秒)</string>
+
+    <string name="app_version">当前版本：V%s-%d</string>
+    <string name="fadeback_uid">UID：%s</string>
+    <string name="upload_log">意见反馈</string>
+    <string name="submit_upload">提交反馈</string>
+    <string name="feedback_success">日志反馈成功</string>
+    <string name="feedback_fail">日志反馈失败</string>
+    <string name="input_content_tip1">请输入反馈内容</string>
+    <string name="input_content_tip2">不可留空</string>
+    <string name="input_contacts_tip1">请输入联系方式</string>
+    <string name="input_contacts_tip2">选填</string>
+    <string name="error_picture">图片异常</string>
+
+    <string name="effect_skin">美肤</string>
+    <string name="effect_whiten">美白</string>
+    <string name="effect_slim">窄脸</string>
+    <string name="effect_resize">小脸</string>
+    <string name="effect_cheek">瘦颧骨</string>
+    <string name="effect_forehead_height">额高</string>
+    <string name="effect_forehead_width">额宽</string>
+    <string name="effect_eye_size">大眼</string>
+    <string name="effect_distance">眼距</string>
+    <string name="effect_slant">眼角</string>
+    <string name="effect_slim_n">瘦鼻</string>
+    <string name="effect_length">长鼻</string>
+    <string name="effect_bridge">窄鼻梁</string>
+    <string name="effect_resize_m">小嘴</string>
+    <string name="effect_position">嘴位</string>
+    <string name="effect_chin">下巴</string>
+
+    <string name="effect_holiday">假日</string>
+    <string name="effect_clear">清晰</string>
+    <string name="effect_warm">暖阳</string>
+    <string name="effect_fresh">清新</string>
+    <string name="effect_creamy">粉嫩</string>
+
+    <string name="my_musics_back">退出</string>
+    <string name="my_musics_delete_all">全部删除</string>
+    <string name="my_musics_play_empty">暂无歌曲</string>
+    <string name="my_musics_play">播放选中歌曲</string>
+    <string name="my_musics_play_error">文件播放出错</string>
+
+</resources>

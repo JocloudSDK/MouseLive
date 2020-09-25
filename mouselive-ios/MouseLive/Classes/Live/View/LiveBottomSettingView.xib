@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.84999999999999998" contentMode="scaleToFill" id="iN0-l3-epB" customClass="LiveBottomSettingView">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ij5-le-C3m">
+                    <rect key="frame" x="1" y="1" width="254" height="69"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_set_background" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-H0-NI2">
+                            <rect key="frame" x="0.0" y="0.0" width="254" height="69"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsn-yz-Apo">
+                            <rect key="frame" x="1" y="1" width="62.5" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="38" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="21" minY="5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="切换摄像头" image="live_camera_rotate">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="eX1-du-kCZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vt5-8x-V9l">
+                            <rect key="frame" x="127.5" y="1" width="62.5" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="38" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="21" minY="5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="档位 高清" image="live_gear">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GAl-8A-9tW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDB-Gw-R3H">
+                            <rect key="frame" x="64.5" y="1" width="62" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-17" minY="38" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="21" minY="5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="镜像" image="live_mirror">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pff-fh-RHf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-g7-red">
+                            <rect key="frame" x="191" y="1" width="62" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-18" minY="38" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="21" minY="5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="美颜" image="live_skin_care">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bnz-j8-kM5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Tsn-yz-Apo" firstAttribute="centerY" secondItem="ij5-le-C3m" secondAttribute="centerY" id="0W7-AO-6wP"/>
+                        <constraint firstItem="ccx-g7-red" firstAttribute="leading" secondItem="vt5-8x-V9l" secondAttribute="trailing" constant="1" id="2O9-XC-CIi"/>
+                        <constraint firstItem="ccx-g7-red" firstAttribute="centerY" secondItem="Tsn-yz-Apo" secondAttribute="centerY" id="3Uh-ha-whI"/>
+                        <constraint firstItem="Tsn-yz-Apo" firstAttribute="top" secondItem="ij5-le-C3m" secondAttribute="top" constant="1" id="7oU-jZ-1Sp"/>
+                        <constraint firstAttribute="trailing" secondItem="Iaj-H0-NI2" secondAttribute="trailing" id="BZN-XF-P10"/>
+                        <constraint firstItem="vt5-8x-V9l" firstAttribute="width" secondItem="Tsn-yz-Apo" secondAttribute="width" id="BeD-uv-Xeo"/>
+                        <constraint firstItem="Iaj-H0-NI2" firstAttribute="top" secondItem="ij5-le-C3m" secondAttribute="top" id="Bkk-8G-lGa"/>
+                        <constraint firstAttribute="trailing" secondItem="ccx-g7-red" secondAttribute="trailing" constant="1" id="E9g-jq-Nji"/>
+                        <constraint firstAttribute="bottom" secondItem="Tsn-yz-Apo" secondAttribute="bottom" constant="1" id="IQM-PC-j0Z"/>
+                        <constraint firstAttribute="bottom" secondItem="Iaj-H0-NI2" secondAttribute="bottom" id="JZ1-AF-jcj"/>
+                        <constraint firstItem="uDB-Gw-R3H" firstAttribute="width" secondItem="Tsn-yz-Apo" secondAttribute="width" id="KCu-WD-BRA"/>
+                        <constraint firstItem="Tsn-yz-Apo" firstAttribute="leading" secondItem="ij5-le-C3m" secondAttribute="leading" constant="1" id="L2S-kp-uoH"/>
+                        <constraint firstItem="ccx-g7-red" firstAttribute="width" secondItem="Tsn-yz-Apo" secondAttribute="width" id="Lts-Ae-qfG"/>
+                        <constraint firstItem="uDB-Gw-R3H" firstAttribute="leading" secondItem="Tsn-yz-Apo" secondAttribute="trailing" constant="1" id="WKX-X7-qve"/>
+                        <constraint firstItem="vt5-8x-V9l" firstAttribute="leading" secondItem="uDB-Gw-R3H" secondAttribute="trailing" constant="1" id="XCy-ew-HD2"/>
+                        <constraint firstItem="Iaj-H0-NI2" firstAttribute="leading" secondItem="ij5-le-C3m" secondAttribute="leading" id="Z9o-Cm-T1F"/>
+                        <constraint firstItem="ccx-g7-red" firstAttribute="height" secondItem="Tsn-yz-Apo" secondAttribute="height" id="Zzu-dG-EVZ"/>
+                        <constraint firstItem="ccx-g7-red" firstAttribute="leading" secondItem="vt5-8x-V9l" secondAttribute="trailing" constant="1" id="eAu-5J-fpD"/>
+                        <constraint firstItem="uDB-Gw-R3H" firstAttribute="height" secondItem="Tsn-yz-Apo" secondAttribute="height" id="i9L-RJ-tWh"/>
+                        <constraint firstItem="vt5-8x-V9l" firstAttribute="centerY" secondItem="Tsn-yz-Apo" secondAttribute="centerY" id="iLq-UN-zRF"/>
+                        <constraint firstItem="vt5-8x-V9l" firstAttribute="height" secondItem="Tsn-yz-Apo" secondAttribute="height" id="j3Q-8V-eGk"/>
+                        <constraint firstItem="vt5-8x-V9l" firstAttribute="leading" secondItem="uDB-Gw-R3H" secondAttribute="trailing" constant="1" id="pQh-pQ-Dc4"/>
+                        <constraint firstItem="uDB-Gw-R3H" firstAttribute="centerY" secondItem="Tsn-yz-Apo" secondAttribute="centerY" id="t9k-O3-BEo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ij5-le-C3m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="8Hj-uF-q8f"/>
+                <constraint firstAttribute="trailing" secondItem="ij5-le-C3m" secondAttribute="trailing" constant="1" id="G9b-B3-WS8"/>
+                <constraint firstAttribute="bottom" secondItem="ij5-le-C3m" secondAttribute="bottom" constant="1" id="Hto-lG-doc"/>
+                <constraint firstItem="ij5-le-C3m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="NNW-CL-KbY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="SwitchBtn" destination="Tsn-yz-Apo" id="w1p-bF-WO5"/>
+                <outlet property="bgView" destination="ij5-le-C3m" id="Scf-5q-Wsl"/>
+                <outlet property="gearBtn" destination="vt5-8x-V9l" id="FKY-LN-6dh"/>
+                <outlet property="magicBtn" destination="ccx-g7-red" id="3v5-rC-II1"/>
+                <outlet property="mirrorBtn" destination="uDB-Gw-R3H" id="o4j-7J-ijK"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="326.45089285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="live_camera_rotate" width="28" height="28"/>
+        <image name="live_gear" width="28" height="28"/>
+        <image name="live_mirror" width="28" height="28"/>
+        <image name="live_set_background" width="256" height="72"/>
+        <image name="live_skin_care" width="28" height="28"/>
+    </resources>
+</document>

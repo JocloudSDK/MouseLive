@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="magic_dialog_title">
+        <item>美颜</item>
+        <item>滤镜</item>
+        <item>贴纸</item>
+        <item>手势</item>
+    </string-array>
+
+    <string-array name="creat_room_publish_mode">
+        <item>RTC模式</item>
+        <item>CDN模式</item>
+    </string-array>
+
+    <string-array name="sharpness_optinal1">
+        <item>流畅</item>
+        <item>标清</item>
+        <item>高清</item>
+    </string-array>
+
+    <string-array name="sharpness_optinal2">
+        <item>320*240</item>
+        <item>640*368</item>
+        <item>960*544</item>
+    </string-array>
+
+    <string-array name="sharpness_optinal3">
+        <item>15fps</item>
+        <item>24fps</item>
+        <item>24fps</item>
+    </string-array>
+
+    <string-array name="sharpness_optinal4">
+        <item>300k</item>
+        <item>550k</item>
+        <item>1000k</item>
+    </string-array>
+
+    <string-array name="rooms_titles">
+        <item>表演PK</item>
+        <item>语音聊天</item>
+    </string-array>
+
+    <string-array name="create_rooms_title">
+        <item>视频直播</item>
+        <item>音频直播</item>
+    </string-array>
+
+    <string-array name="create_rooms_info">
+        <item>表演PK</item>
+        <item>语音聊天</item>
+    </string-array>
+
+    <string-array name="areas">
+        <item>国内</item>
+        <item>海外</item>
+    </string-array>
+
+    <string-array name="voice_effects">
+        <item>空灵</item>
+        <item>惊悚</item>
+        <item>鲁班</item>
+        <item>萝莉</item>
+        <item>大叔</item>
+        <item>死肥仔</item>
+        <item>熊孩子</item>
+        <item>魔兽农民</item>
+        <item>重金属</item>
+        <item>感冒</item>
+        <item>重机械</item>
+        <item>困兽</item>
+        <item>强电流</item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<resources>
+
+    <style name="Dialog.Bottom" parent="Dialog.FullScreen">
+        <item name="android:windowAnimationStyle">@style/dialog_fragment_animation</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="Dialog.Bottom.FullScreen" parent="Dialog.FullScreen">
+        <item name="android:windowAnimationStyle">@style/dialog_fragment_animation</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Dialog.FullScreen" parent="AppTheme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Dialog.NoBackground" parent="AppTheme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog_fragment_animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_bottom</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

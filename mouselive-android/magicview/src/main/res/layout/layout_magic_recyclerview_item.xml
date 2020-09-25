@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp">
+
+    <ImageView
+        android:id="@+id/effectImageView"
+        android:layout_width="@dimen/magic_item_width_height"
+        android:layout_height="@dimen/magic_item_width_height"
+        android:padding="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/magic_description" />
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="@dimen/magic_item_width_height"
+        android:layout_height="@dimen/magic_item_width_height"
+        android:background="@mipmap/magic_selected"
+        app:layout_constraintLeft_toLeftOf="@+id/effectImageView"
+        app:layout_constraintRight_toRightOf="@+id/effectImageView"
+        app:layout_constraintTop_toTopOf="@+id/effectImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/effectImageView"
+        android:contentDescription="@string/magic_description" />
+
+    <ImageView
+        android:id="@+id/readyImageView"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:background="@mipmap/magic_ready"
+        app:layout_constraintRight_toRightOf="@+id/effectImageView"
+        app:layout_constraintTop_toTopOf="@+id/effectImageView"
+        android:contentDescription="@string/magic_description" />
+
+    <ImageView
+        android:id="@+id/downloadImageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@mipmap/magic_download"
+        app:layout_constraintRight_toRightOf="@+id/effectImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/effectImageView"
+        android:contentDescription="@string/magic_description" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/effectImageView"
+        app:layout_constraintRight_toRightOf="@+id/effectImageView"
+        app:layout_constraintTop_toTopOf="@+id/effectImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/effectImageView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/magic_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/effectImageView"
+        app:layout_constraintRight_toRightOf="@+id/effectImageView"
+        app:layout_constraintTop_toBottomOf="@+id/effectImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

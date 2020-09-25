@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_msg_user_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/shape_room_msg_item_background"
+    android:gravity="left"
+    android:padding="8dp"
+    android:text="用户A 220000"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/room_msg_size" />

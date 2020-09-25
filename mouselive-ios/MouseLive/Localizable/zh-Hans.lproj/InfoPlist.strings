@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MouseLive
+
+  Created by 宁丽环 on 2020/3/9.
+  Copyright © 2020 sy. All rights reserved.
+*/
+//App 名称
+CFBundleDisplayName = "聚联云娱乐直播";

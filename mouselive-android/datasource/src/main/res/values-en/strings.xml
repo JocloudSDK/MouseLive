@@ -1,0 +1,3 @@
+<resources>
+    <string name="network_disconnect">Reconnecting to internet, please wait.</string>
+</resources>

@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Jocloud Joy</string>
+    <string name="main_project_name">Solutions for Pan-Entertainment Scenarios</string>
+    <string name="main_version">V%s</string>
+    <string name="main_version2">Build：%s %s TB：%s HMR：%s</string>
+
+    <string name="request_error_title">Permissions Required</string>
+    <string name="request_external_storage">The app needs SD read and write permissions to store log information. Please allow it first.</string>
+    <string name="request_live">APP for audio and video functions, requires your camera, microphone permissions and SD card storage permissions, please allow it first.</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="reject">Reject</string>
+    <string name="agree">Agree</string>
+    <string name="requesting_chating">Connecting(%ds)...</string>
+    <string name="send">Send</string>
+
+    <string name="room_publish_mode_rtc">Currently in real-time streaming RTC mode</string>
+    <string name="room_publish_mode_cdn">Currently in CDN mode</string>
+    <string name="owner_leave_monment">Owner will be right back.</string>
+    <string name="room_list_dimiss">Failed to enter the room, the room does not exist</string>
+    <string name="join_room_fail">Failed to join the room(%s)</string>
+    <string name="room_list_item_name">%s(%s)</string>
+    <string name="room_info_top_monery">Contributions</string>
+    <string name="room_say_something">Hey~</string>
+    <string name="room_all_no_typing">Ban All</string>
+    <string name="room_all_yes_typing">Unban All</string>
+    <string name="room_user_menu_up">Admin</string>
+    <string name="room_user_menu_down">Viewer</string>
+    <string name="room_user_menu_mute">Ban</string>
+    <string name="room_user_menu_no_mute">Unban</string>
+    <string name="room_user_menu_kick_out">Kick</string>
+    <string name="room_toggle_camera">Switch</string>
+    <string name="room_toggle_mirror">Mirror</string>
+    <string name="room_toggle_face">Magic</string>
+    <string name="room_sharpness">Quality</string>
+    <string name="room_pk_member_dialog_title">Broadcasters</string>
+    <string name="room_member_dialog_title">Audience</string>
+    <string name="room_members_level1">(Owner)</string>
+    <string name="room_members_level2">(Admin)</string>
+    <string name="room_members_statue_mute">(Banned)</string>
+    <string name="room_close_lianmai">Disconnect</string>
+    <string name="room_in_lianmai_request">The remote user is not available for connection.</string>
+    <string name="room_refult_lianmai_request">You\'re rejected by the owner.</string>
+    <string name="room_add_role_error">Admin fail</string>
+    <string name="room_remote_role_error">Viewer fail</string>
+    <string name="room_mute_error">Ban fail</string>
+    <string name="room_unmute_error">Unmute fail</string>
+    <string name="room_kick_error">Kick fail</string>
+    <string name="room_xiamai_error">Disconnect fail</string>
+    <string name="join_room">joined</string>
+    <string name="leave_room">left</string>
+    <string name="user_kick_out">is kicked</string>
+    <string name="user_mute">is banned</string>
+    <string name="user_unmute">is unbanned</string>
+    <string name="user_muting">Banned</string>
+    <string name="user_add_role">is admin now</string>
+    <string name="user_remove_role">is not admin now</string>
+    <string name="office_notie">Jocloud provides low latency, high quality video and audio streaming SDK and chatroom
+        SDK. Try the features in the live room and know more about us via www.jocloud.com.</string>
+    <string name="msg_text_mine">Me %s</string>
+    <string name="msg_kick_out_me">You are kicked out.</string>
+    <string name="magic_reset">Reset</string>
+    <string name="magic_load_data_loading">Beauty data is loading, please wait</string>
+    <string name="magic_load_data_fail">Failed to load beauty data</string>
+    <string name="room_net_connting_message">Reconnecting to internet, please wait.</string>
+    <string name="room_magic_original">Original</string>
+    <string name="room_toggle_mic_error">Failed to switch microphone</string>
+
+    <string name="voice_wather">Online：%s</string>
+    <string name="voice_all_mic_off">Mute All</string>
+    <string name="voice_all_mic_on">Unmute All</string>
+    <string name="voice_user_name_default">No.%s</string>
+    <string name="voice_user_mai_up">Connect</string>
+    <string name="voice_user_mai_down">Disconnect</string>
+    <string name="voice_user_mai_down2">Off Seat</string>
+    <string name="voice_user_dialog_mute">Mic Off</string>
+    <string name="voice_user_dialog_no_mute">Mic On</string>
+    <string name="voice_refult_shangmai_request">Homeowner rejected your application</string>
+    <string name="voice_refult_shangmai_fill">Seats are full</string>
+    <string name="voice_changer_title">Voice Changer</string>
+    <string name="voice_changer_ear_on">Ear on</string>
+    <string name="voice_changer_ear_off">Ear off</string>
+    <string name="voice_changer_tip">“It ’s better to wear earphones”</string>
+    <string name="voice_shangmai_tip">have a seat.</string>
+    <string name="voice_xiamai_tip">left the seat.</string>
+
+    <string name="ktv_empty_musics">暂无人点歌</string>
+
+    <string name="ws_disconnect">WS disconnect</string>
+    <string name="apply_chat_title">%s apply for connet</string>
+    <string name="room_owner_leave_tip">Broadcast ended.</string>
+    <string name="room_join_fail_tip">Failed to enter the room, please try again</string>
+    <string name="room_apply_chat_fail">Connect fail</string>
+    <string name="room_apply_chat_disconnect">Connect fail</string>
+    <string name="room_cancel_chat_fail">Cancel fail</string>
+    <string name="room_apply_chat_disconnected">You have left the room</string>
+    <string name="video_definition">Sharpness</string>
+    <string name="reject_chatting">%s rejected your connect</string>
+
+    <string name="info_roomid">RoomId：%s</string>
+    <string name="info_uid">UID：%s</string>
+    <string name="net_tx_quality">TxNetwork：%s</string>
+    <string name="net_rx_quality">RxNetwork：%s</string>
+    <string name="bitrates_up">Upload：%dkb</string>
+    <string name="bitrates_m">(A：%dkb/ V：%dkb)</string>
+    <string name="bitrates_down">Download：%dkb</string>
+    <string name="net_quality1">Excellent</string>
+    <string name="net_quality2">Good</string>
+    <string name="net_quality3">Poor</string>
+    <string name="net_quality4">Bad</string>
+    <string name="net_quality5">Very Bad</string>
+    <string name="net_quality6">Disconnect</string>
+    <string name="net_unknown">Unknown</string>
+
+    <string name="login_fail">Login failed, please try again</string>
+    <string name="query_token_fail">Token acquisition failed, please try again</string>
+    <string name="sdk_login_fail">SDK login failed, please try again</string>
+    <string name="network_fail">The network is abnormal, please check the network connection</string>
+
+    <string name="create_room_text1">Please Choose a Room Type and</string>
+    <string name="create_room_text2">Create Your Own Room</string>
+    <string name="create_room_start">Go Live</string>
+    <string name="create_room_back">Back</string>
+    <string name="create_room_selecte_publish_mode">Select video mode</string>
+
+    <string name="main_menu_main_text">Live</string>
+    <string name="main_menu_main_video">Storie</string>
+    <string name="main_menu_main_fadeback">Feedback</string>
+    <string name="main_menu_mine_text">Me</string>
+
+    <string name="request_lianmai">wants to interact with you.</string>
+    <string name="request_pk">wants to battle with you.</string>
+    <string name="request_shangmai">wants to have a seat.</string>
+
+    <string name="setting_group_title_are">Area</string>
+
+    <string name="change_are">Modify the area, you need to reopen the app</string>
+    <string name="setting_uid">UID:%s</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_title">Setting</string>
+    <string name="setting_is_china">China</string>
+    <string name="setting_token_title">Token</string>
+    <string name="setting_token_content">Timeout(Second)</string>
+
+    <string name="app_version">Current Version: V%s-%d</string>
+    <string name="fadeback_uid">UID：%s</string>
+    <string name="upload_log">Feedback</string>
+    <string name="submit_upload">Submit</string>
+    <string name="feedback_success">Feedback success.</string>
+    <string name="feedback_fail">Feedback failed.</string>
+    <string name="input_content_tip1">Please kindly let us know your concerns.</string>
+    <string name="input_content_tip2">Do not leave it blank.</string>
+    <string name="input_contacts_tip1">How can we contact you?</string>
+    <string name="input_contacts_tip2">Optional</string>
+    <string name="error_picture">Picture error</string>
+
+    <string name="effect_skin">skin</string>
+    <string name="effect_whiten">whiten</string>
+    <string name="effect_slim">slim</string>
+    <string name="effect_resize">resize</string>
+    <string name="effect_cheek">cheek</string>
+    <string name="effect_forehead_height">forehead</string>
+    <string name="effect_forehead_width">forehead</string>
+    <string name="effect_eye_size">eye size</string>
+    <string name="effect_distance">distance</string>
+    <string name="effect_slant">slant</string>
+    <string name="effect_slim_n">slim</string>
+    <string name="effect_length">length</string>
+    <string name="effect_bridge">bridge</string>
+    <string name="effect_resize_m">resize</string>
+    <string name="effect_position">position</string>
+    <string name="effect_chin">chin</string>
+
+    <string name="effect_holiday">holiday</string>
+    <string name="effect_clear">clear</string>
+    <string name="effect_warm">warm</string>
+    <string name="effect_fresh">fresh</string>
+    <string name="effect_creamy">creamy</string>
+
+    <string name="my_musics_back">Back</string>
+    <string name="my_musics_delete_all">Delete All</string>
+    <string name="my_musics_play_empty">no music now</string>
+    <string name="my_musics_play">Play Selected Music</string>
+    <string name="my_musics_play_error">Play Error</string>
+
+</resources>

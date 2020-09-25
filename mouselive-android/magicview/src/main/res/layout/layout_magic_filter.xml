@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="FilterDataBinding"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/progressSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/magic_seekbar_progress_drawable"
+            android:thumb="@drawable/magic_seekbar_thumb_selector"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/valueTextView"
+            app:layout_constraintTop_toTopOf="@+id/resetImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/resetImageView" />
+
+        <TextView
+            android:id="@+id/valueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:gravity="start|center"
+            android:textSize="@dimen/magic_text_size"
+            android:text="@string/magic_default_value"
+            android:textColor="@android:color/white"
+            android:maxLength="3"
+            app:layout_constraintRight_toLeftOf="@+id/resetImageView"
+            app:layout_constraintTop_toTopOf="@+id/resetImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/resetImageView" />
+
+        <ImageView
+            android:id="@+id/resetImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@mipmap/magic_reset"
+            android:contentDescription="@string/magic_reset"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/effectLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resetImageView">
+
+            <LinearLayout
+                android:id="@+id/originalLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/originalImageView"
+                    android:layout_width="@dimen/magic_item_width_height"
+                    android:layout_height="@dimen/magic_item_width_height"
+                    android:visibility="visible"
+                    android:background="@drawable/magic_original"
+                    android:contentDescription="@string/magic_original" />
+
+                <TextView
+                    android:id="@+id/originalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="@string/magic_original"
+                    android:textSize="@dimen/magic_text_size" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

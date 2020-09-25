@@ -1,0 +1,92 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion BUILDTOOLSVERSION
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            buildConfigField("String", "TB_VERSION", "\"${thunder_version}\"")
+            buildConfigField("String", "HRM_VERSION", "\"${hummer_version}\"")
+            buildConfigField("String", "SERVICE_VERSION", "\"${service_version}\"")
+            buildConfigField("String", "HTTP_HOST", "\"http://fun.jocloud.com\"")
+            buildConfigField("String", "WS_HOST", "\"ws://fun.jocloud.com/fun/ws/v1\"")
+        }
+
+        qiang {
+            initWith(debug)
+            buildConfigField("String", "HTTP_HOST", "\"http://192.168.1.103:9008\"")
+            buildConfigField("String", "WS_HOST", "\"ws://192.168.1.103:9006/fun/ws/v1\"")
+        }
+
+        release {
+            initWith(debug)
+//            buildConfigField("String", "HTTP_HOST", "\"http://fun.jocloud.com\"")
+//            buildConfigField("String", "WS_HOST", "\"ws://fun.jocloud.com/fun/ws/v1\"")
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+def libs = [
+        retrofit   : "2.3.0",
+        okhttp     : "3.8.1",
+        gson       : "2.4",
+        rxjava     : "2.1.14",
+        rxandroid  : "2.0.2",
+        roomVersion: "2.2.1",
+]
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.aar'])
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //ROOM本地数据库
+    api "androidx.room:room-runtime:${libs.roomVersion}"
+    kapt "androidx.room:room-compiler:${libs.roomVersion}"
+
+    //SDK内部依赖库 hummer sdk
+    api "com.hummer.im:core:${hummer_version}"
+    api "com.hummer.im:chatroom:${hummer_version}"
+
+    //ThunderBolt sdk
+    api "com.rtc.thunder:thunderbolt:${thunder_version}"
+
+    //基础库
+    api project(':basedroid')
+
+    //网络模块
+    implementation "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:converter-gson:${libs.retrofit}"
+    implementation "com.squareup.okhttp3:okhttp:${libs.okhttp}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${libs.okhttp}"
+    implementation "io.reactivex.rxjava2:rxjava:${libs.rxjava}"
+    api "io.reactivex.rxjava2:rxandroid:${libs.rxandroid}"
+
+    //WS模块
+    implementation "org.java-websocket:Java-WebSocket:1.4.1"
+}

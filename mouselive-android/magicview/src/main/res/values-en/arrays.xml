@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="magic_view_title_array">
+        <item>Skin</item>
+        <item>Filter</item>
+        <item>Face</item>
+        <item>Sticker</item>
+        <item>Gesture</item>
+    </string-array>
+
+    <string-array name="magic_view_filter_show_name_array">
+        <item>holiday</item>
+        <item>clear</item>
+        <item>warm</item>
+        <item>fresh</item>
+        <item>creamy</item>
+    </string-array>
+
+    <string-array name="magic_view_advanced_show_name_array">
+        <item>slim</item>
+        <item>resize</item>
+        <item>cheek</item>
+        <item>forehead</item>
+        <item>forehead</item>
+        <item>eye size</item>
+        <item>distance</item>
+        <item>slant</item>
+        <item>slim</item>
+        <item>length</item>
+        <item>bridge</item>
+        <item>resize</item>
+        <item>position</item>
+        <item>chin</item>
+    </string-array>
+
+</resources>

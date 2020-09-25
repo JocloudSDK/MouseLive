@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_group_title_are">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="area_is_china"
+            android:title="@string/setting_is_china" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_token_title">
+        <EditTextPreference
+            android:defaultValue="86400"
+            android:inputType="number"
+            android:key="token_timeout"
+            android:maxLength="5"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/setting_token_content" />
+    </PreferenceCategory>
+</PreferenceScreen>

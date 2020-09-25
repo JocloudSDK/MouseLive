@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{324C110E-6F50-4831-9EBE-01DCCFCF9A9D}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <OutDir>..\shadow\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <OutDir>..\shadow\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\3rd\Thunderbolt\include;..\3rd\Hummer\include;.\;..\depends\dwinternal\orangefilterpub2013\include;..\3rd\glut\include;..\3rd\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\3rd\Thunderbolt\lib\x86;..\3rd\Hummer\lib\Release_x86;..\depends\dwinternal\orangefilterpub2013\lib\Release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>thunderbolt.lib;Hummer.lib;glew32.lib;of_effect.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>call ../build/debug_exportbin.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\3rd\Thunderbolt\include;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\include;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\include\QTCore;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\include\QtGui;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\include\QtNetwork;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\include\QtWebSockets;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\include\QtWidgets;.\Release\uic;..\3rd\Hummer\include;.\;..\3rd\glut\include;..\depends\dwinternal\orangefilterpub2013\include;..\3rd\glut\include;..\3rd\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\3rd\Thunderbolt\lib\x86;D:\install\Qt\Qt5.9.9\5.9.9\msvc2015\lib;..\3rd\Hummer\lib\Release_x86;..\depends\dwinternal\orangefilterpub2013\lib\Release\x86;..\3rd\glut\lib;..\3rd\libyuv\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>thunderbolt.lib;Hummer.lib;glew32.lib;of_effect.lib;opengl32.lib;yuv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>Qt5.9.9</QtInstall>
+    <QtModules>core;gui;widgets;websockets;network</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>Qt5.9.9</QtInstall>
+    <QtModules>core;gui;widgets;websockets;network</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="common\crash\CCrashStack.cpp" />
+    <ClCompile Include="common\crash\Msjexhnd.cpp" />
+    <ClCompile Include="common\download\Download.cpp" />
+    <ClCompile Include="common\download\DownloadAvator.cpp" />
+    <ClCompile Include="common\download\DownloadImpl.cpp" />
+    <ClCompile Include="common\http\HttpClient.cpp" />
+    <ClCompile Include="common\json2\RapidjsonHelper.cpp" />
+    <ClCompile Include="common\log\log.cpp" />
+    <ClCompile Include="common\log\logger.cpp" />
+    <ClCompile Include="common\qss\QssLoad.cpp" />
+    <ClCompile Include="common\setting\Setting.cpp" />
+    <ClCompile Include="common\status\Status.cpp" />
+    <ClCompile Include="common\taskQueue\TaskQueue.cpp" />
+    <ClCompile Include="common\taskQueue\Work.cpp" />
+    <ClCompile Include="common\thread\thread.cpp" />
+    <ClCompile Include="common\thunder\ThunderManager.cpp" />
+    <ClCompile Include="common\timer\Timer.cpp" />
+    <ClCompile Include="common\translate\Translate.cpp" />
+    <ClCompile Include="common\utils\String.cpp" />
+    <ClCompile Include="common\websocket\CCService.cpp" />
+    <ClCompile Include="common\websocket\CSWSService.cpp" />
+    <ClCompile Include="common\websocket\Invite\LiveBeInvited.cpp" />
+    <ClCompile Include="common\websocket\Invite\LiveInvite.cpp" />
+    <ClCompile Include="common\websocket\LiveManager.cpp" />
+    <ClCompile Include="common\websocket\WebSocketClient.cpp" />
+    <ClCompile Include="common\websocket\WSService.cpp" />
+    <ClCompile Include="mainui\baseui\MessageBoxNormalUI.cpp" />
+    <ClCompile Include="mainui\baseui\MessageBoxPKUI.cpp" />
+    <ClCompile Include="mainui\baseui\QPixmapUtil.cpp" />
+    <ClCompile Include="mainui\living\logic\LivingHttpLogic.cpp" />
+    <ClCompile Include="mainui\living\ui\AnchorCellUI.cpp" />
+    <ClCompile Include="mainui\living\ui\BeautyUI.cpp" />
+    <ClCompile Include="mainui\living\ui\beauty\BeautyCellUI.cpp" />
+    <ClCompile Include="mainui\living\ui\beauty\LvjingUI.cpp" />
+    <ClCompile Include="mainui\living\ui\beauty\MeifuUI.cpp" />
+    <ClCompile Include="mainui\living\ui\beauty\ShoushiUI.cpp" />
+    <ClCompile Include="mainui\living\ui\beauty\TiezhiUI.cpp" />
+    <ClCompile Include="mainui\living\ui\beauty\WuguanUI.cpp" />
+    <ClCompile Include="mainui\living\ui\ClientEquipmentUI.cpp" />
+    <ClCompile Include="mainui\living\ui\LivingDialogUI.cpp" />
+    <ClCompile Include="mainui\living\ui\ThunderMeetUI.cpp" />
+    <ClCompile Include="mainui\living\ui\UserCellUI.cpp" />
+    <ClCompile Include="mainui\main\logic\MainHttpLogic.cpp" />
+    <ClCompile Include="mainui\main\ui\MainUI.cpp" />
+    <ClCompile Include="mainui\main\ui\RoomInfoCellUI.cpp" />
+    <ClCompile Include="mainui\sdk\beauty\BeautyManager.cpp" />
+    <ClCompile Include="mainui\sdk\beauty\GLRuntimeEnvironment.cpp" />
+    <ClCompile Include="mainui\sdk\beauty\OrangeFilterRender.cpp" />
+    <ClCompile Include="mainui\sdk\beauty\OrangeHelper.cpp" />
+    <ClCompile Include="mainui\sdk\beauty\pathutils.cpp" />
+    <ClCompile Include="mainui\sdk\beauty\UEvent.cpp" />
+    <ClCompile Include="mainui\sdk\chatroom\ChatRoomManager.cpp" />
+    <ClCompile Include="mainui\sdk\thunderbolt\MediaManager.cpp" />
+    <QtRcc Include="joy.qrc" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\AnchorCellUI.ui" />
+    <QtUic Include="ui\BeautyCellUI.ui" />
+    <QtUic Include="ui\BeautyUI.ui" />
+    <QtUic Include="ui\ClientEquipmentUI.ui" />
+    <QtUic Include="ui\LivingUI.ui" />
+    <QtUic Include="ui\lvjingUI.ui" />
+    <QtUic Include="ui\MainUI.ui" />
+    <QtUic Include="ui\MeifuUI.ui" />
+    <QtUic Include="ui\MessageBoxNormalUI.ui" />
+    <QtUic Include="ui\MessageBoxPKUI.ui" />
+    <QtUic Include="ui\NoEquipmentUI.ui" />
+    <QtUic Include="ui\RoomInfoCellUI.ui" />
+    <QtUic Include="ui\ShoushiUI.ui" />
+    <QtUic Include="ui\TiezhiUI.ui" />
+    <QtUic Include="ui\UserCellUI.ui" />
+    <QtUic Include="ui\WuguanUI.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="common\websocket\WebSocketClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\crash\CCrashStack.h" />
+    <ClInclude Include="common\crash\Msjexhnd.h" />
+    <ClInclude Include="common\download\Download.h" />
+    <ClInclude Include="common\download\DownloadAvator.h" />
+    <ClInclude Include="common\qss\QssLoad.h" />
+    <QtMoc Include="mainui\living\ui\BeautyUI.h" />
+    <QtMoc Include="mainui\living\ui\beauty\LvjingUI.h" />
+    <ClInclude Include="mainui\sdk\beauty\BeautyManager.h" />
+    <QtMoc Include="mainui\living\ui\beauty\BeautyCellUI.h" />
+    <QtMoc Include="mainui\living\ui\beauty\MeifuUI.h" />
+    <QtMoc Include="mainui\living\ui\beauty\ShoushiUI.h" />
+    <QtMoc Include="mainui\living\ui\beauty\TiezhiUI.h" />
+    <QtMoc Include="mainui\living\ui\beauty\WuguanUI.h" />
+    <ClInclude Include="mainui\sdk\beauty\CSLock.h" />
+    <ClInclude Include="mainui\sdk\beauty\GLRuntimeEnvironment.h" />
+    <ClInclude Include="mainui\sdk\beauty\OrangeFilterRender.h" />
+    <ClInclude Include="mainui\sdk\beauty\OrangeHelper.h" />
+    <ClInclude Include="mainui\sdk\beauty\pathutils.h" />
+    <ClInclude Include="mainui\sdk\beauty\UEvent.h" />
+    <ClInclude Include="resource2.h" />
+    <QtMoc Include="mainui\living\ui\LivingDialogUI.h" />
+    <QtMoc Include="mainui\living\logic\LivingHttpLogic.h" />
+    <QtMoc Include="mainui\living\ui\ClientEquipmentUI.h" />
+    <QtMoc Include="common\timer\Timer.h" />
+    <ClInclude Include="common\websocket\CCService.h" />
+    <ClInclude Include="common\websocket\CSWSService.h" />
+    <QtMoc Include="common\websocket\Invite\LiveBeInvited.h" />
+    <QtMoc Include="common\websocket\Invite\LiveInvite.h" />
+    <ClInclude Include="common\websocket\Invite\LiveInviteItem.h" />
+    <QtMoc Include="common\websocket\LiveManager.h" />
+    <ClInclude Include="common\websocket\LiveManagerObserver.h" />
+    <ClInclude Include="common\websocket\WSModel.h" />
+    <QtMoc Include="common\websocket\WSService.h" />
+    <QtMoc Include="mainui\living\ui\AnchorCellUI.h" />
+    <QtMoc Include="mainui\living\ui\UserCellUI.h" />
+    <QtMoc Include="mainui\living\ui\ThunderMeetUI.h" />
+    <QtMoc Include="mainui\baseui\MessageBoxNormalUI.h" />
+    <QtMoc Include="mainui\baseui\MessageBoxPKUI.h" />
+    <ClInclude Include="mainui\LogicModel.h" />
+    <ClInclude Include="mainui\RoomInfo.h" />
+    <QtMoc Include="mainui\sdk\thunderbolt\MediaManager.h" />
+    <QtMoc Include="mainui\sdk\chatroom\ChatRoomManager.h" />
+    <ClInclude Include="mainui\UserInfo.h" />
+    <QtMoc Include="mainui\main\logic\MainHttpLogic.h" />
+    <QtMoc Include="common\download\DownloadImpl.h" />
+    <QtMoc Include="common\http\HttpClient.h" />
+    <ClInclude Include="common\json2\RapidjsonHelper.h" />
+    <ClInclude Include="common\log\log.h" />
+    <ClInclude Include="common\log\loggerExt.h" />
+    <ClInclude Include="common\setting\Setting.h" />
+    <ClInclude Include="common\status\Status.h" />
+    <QtMoc Include="common\taskQueue\TaskQueue.h" />
+    <QtMoc Include="common\taskQueue\Task.h" />
+    <QtMoc Include="common\taskQueue\Thread.h" />
+    <QtMoc Include="common\taskQueue\Work.h" />
+    <ClInclude Include="common\thread\thread.h" />
+    <ClInclude Include="common\thunder\ThunderManager.h" />
+    <ClInclude Include="common\translate\Translate.h" />
+    <ClInclude Include="common\utils\Settings.h" />
+    <ClInclude Include="common\utils\Singleton.h" />
+    <ClInclude Include="common\utils\String.h" />
+    <ClInclude Include="mainui\AppInfo.h" />
+    <ClInclude Include="mainui\baseui\QPixmapUtil.h" />
+    <ClInclude Include="mainui\Constans.h" />
+    <QtMoc Include="mainui\main\ui\RoomInfoCellUI.h" />
+    <QtMoc Include="mainui\main\ui\MainUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="language\en.ts" />
+    <None Include="language\zh.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\app_logo_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="joy.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

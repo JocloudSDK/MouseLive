@@ -1,0 +1,179 @@
+/*
+  Localizable.strings
+  MouseLive
+
+  Created by 宁丽环 on 2020/3/9.
+  Copyright © 2020 sy. All rights reserved.
+*/
+"List_Admin" = "管理员";
+"Apply_Admin" = "升管";
+"Agree" = "同意";
+"Anchor" = "主播";
+"Audience" = "在线观众";
+"Audio" = "语音聊天";
+"Back" = "返回";
+"Bad" = "较差";
+"Ban" = "禁言";
+"Unban" = "解禁";
+"Ban All" = "全部禁言";
+"Banned" = "禁言中";
+"Broadcast ended." = "房主直播已结束";
+"Broadcaster will be right back." = "【主播暂时离开一下下，很快回来哦！】";
+"Broadcasters" = "在线主播";
+"Commentary" = "赛事解说";
+"Connect" = "上麦";
+"Connecting..." = "请求连麦中…";
+"Create Your Own Room" = "创建属于自己的房间";
+"Current Version" = "当前版本";
+"Disconnect" = "下麦";
+"Do not leave it blank." = "不可留空";
+"Download" = "下行";
+"Excellent" = "极好";
+"Feedback" = "意见反馈";
+"Go Live" = "开始";
+"Good" = "好";
+"Quality" = "档位";
+"Hey~" = "聊两句~";
+"How can we contact you?" = "请输入联系方式";
+"Joined" = "来了";
+"KTV"   = "在线KTV";
+"Kick" = "踢出";
+"Live" = "直播";
+"Magic" = "魔法";
+"Me" = "个人信息";
+"Mic Off" = "闭麦";
+"Mic On" = "开麦";
+"Mirror" = "镜像";
+"Mute All" = "全部闭麦";
+"Mute" = "禁言";
+"TxNetwork" = "上行质量";
+"RxNetwork" = "下行质量";
+"No.1" = "1号麦";
+"No.2" = "2号麦";
+"No.3" = "3号麦";
+"No.4" = "4号麦";
+"No.5" = "5号麦";
+"No.6" = "6号麦";
+"No.7" = "7号麦";
+"No.8" = "8号麦";
+"Off Seat" = "下麦";
+"Online Karaoke" = "唱歌娱乐 在线KTV";
+"Online" = "在线";
+"Optional" = "选填";
+"List_Owner" = "主播";//观众列表的禁言用Ban，语音房闭麦用Mute
+"Please Choose a Room Type to Broadcast" = "请选择开播类型，创建属于自己的房间";
+"Please kindly let us know your concerns." = "请输入反馈内容";
+"Feedback success." = "反馈成功";
+"Feedback failed." = "反馈失败";
+"Poor" = "一般";
+"Reject" = "拒绝";
+"Seats are full." = "座位已满";
+"The remote user is not available for connection." = "对面主播正在连麦中，请稍后再试";
+"Solutions for Pan-Entertainment Scenarios" = "聚联云泛娱乐直播解决方案";
+"Sports/Games Commentary" = "球赛游戏 赛事解说";
+"Storie" = "小视频";
+"Submit" = "提交反馈";
+"Jocloud provides low latency, high quality video and audio streaming SDK and chatroom SDK. Try the features in the live room and know more about us via www.jocloud.com." = "聚联云提供低延时高质量音视频SDK，以及实时聊天SDK。点击房间内的按钮试试吧！ 访问官网www.jocloud.com了解更多~";
+"Switch" = "切换镜头";
+"Reconnecting to internet, please wait." = "网络异常，请检查网络连接";
+"Seats are full" = "座位已满";
+"Unban All" = "全部解禁";
+"Unknown" = "未知";
+"Unmute All" = "全部开麦";
+"Unmute" = "解禁";
+"Upload" = "上行";
+"Very Bad" = "非常差";
+"Video Broadcasting" = "视频直播 表演PK";
+"Video" = "表演PK";
+"Viewer" = "降管";
+"Voice Chatting" = "音频直播 语音聊天";
+"Wants to have a seat" = "申请上麦";
+"You're rejected by the owner." = "主播拒绝了你的连麦申请";
+"is admin now" = "已是管理员";
+"is banned" = "被禁言";
+"is not admin now" = "已不是管理员";
+"is unbanned" = "被解禁";
+"joined" = "来了";
+"Owner will be right back." = "主播离开一下下,很快回来哦";
+"left the seat." = "已离开坐席";
+"left" = "离开";
+"have a seat." = "已上座";
+"wants to battle with you." = "想与您PK";
+"wants to interact with you." = "想与您连麦";
+"wants to have a seat." = "申请上座";
+"Contributions" = "贡献榜";
+"LD     320*240 15fps 300k"  = "流畅 320*240 15fps 300k";
+"SD     640*368 24fps 550k"  = "标清 640*368 24fps 550k";
+"HD     960*540 24fps 1000k" = "高清 960*544 24fps 1000k";
+"Talk_Me" = "我 ";
+"is kicked" = "被踢出房间";
+"Video_Disconnect" = " 断开 ";
+"Login failed, please try again" = "登陆失败，请重新登录！";
+
+"OK" = "确定";
+"Ear on" = "耳返开启";
+"Ear close" = "耳返关闭";
+"You are kicked out" = "您被踢出直播间";
+"WS disconnect" = "WS 断开连接";
+
+"Net Toast" = "温馨提示";
+"Net connecting, please wait" = "网络连接中，请稍候";
+
+// beauty
+"Beauty" = "美颜";
+"Filter" = "滤镜";
+"Sticker" = "贴纸";
+"Gesture" = "手势";
+"Original" = "原图";
+"Reset" = "重置";
+"Opacity" = "美肤";
+"Intensity" = "美白";
+"ThinfaceIntensity" = "窄脸";
+"SmallfaceIntensity" = "小脸";
+"SquashedFaceIntensity" = "瘦颧骨";
+"ForeheadLiftingIntensity" = "额高";
+"WideForeheadIntensity" = "额宽";
+"BigSmallEyeIntensity" = "大眼";
+"EyesOffset" = "眼距";
+"EyesRotationIntensity" = "眼角";
+"ThinNoseIntensity" = "瘦鼻";
+"LongNoseIntensity" = "长鼻";
+"ThinNoseBridgeIntensity" = "窄鼻梁";
+"ThinmouthIntensity" = "小嘴";
+"MovemouthIntensity" = "嘴位";
+"ChinLiftingIntensity" = "下巴";
+"holiday" = "假日";
+"clear" = "清晰";
+"warm" = "暖阳";
+"fresh" = "清新";
+"creamy" = "粉嫩";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Current Version"; ObjectID = "7TB-NF-hgU"; */
+"7TB-NF-hgU.text" = "当前版本";
+
+/* Class = "UITextField"; placeholder = "Optional"; ObjectID = "GyI-sd-Bcb"; */
+"GyI-sd-Bcb.placeholder" = "选填";
+
+/* Class = "UILabel"; text = "Please kindly let us know your concerns."; ObjectID = "TQg-uF-0G0"; */
+"TQg-uF-0G0.text" = "请输入反馈内容";
+
+/* Class = "UILabel"; text = "How can we contact you?"; ObjectID = "Zl7-xn-Ho5"; */
+"Zl7-xn-Ho5.text" = "请输入联系方式";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "k9T-7U-a6B"; */
+"k9T-7U-a6B.normalTitle" = "提交反馈";

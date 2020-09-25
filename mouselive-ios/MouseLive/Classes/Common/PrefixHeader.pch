@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  MouseLive
+//
+//  Created by 宁丽环 on 2020/3/2.
+//  Copyright © 2020 sy. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+#import <Masonry.h>
+#import "UIView+SLExtension.h"
+#import "UIImage+SLEXtension.h"
+#import "UIViewController+SLExtension.h"
+#import "MBProgressHUD+HM.h"
+#import "UIColor+SLExtention.h"
+#import <MJExtension.h>
+#import "Constant.h"
+#import "SYHttpService.h"
+#import "KeyString.h"
+#import "YYWebImage.h"
+#import "NSString+BGExtension.h"
+#import "NSMutableDictionary+BGExtention.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "LiveUserListManager.h"
+
+
+#import "TypeAlias.h"
+#import <YYModel.h>
+
+// 日志 level
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+static NSString* const kLogFilePath = @"/SCLogs/";
+//static NSString* const kYYWSUrl = @"ws://192.168.1.200:9006/fun/ws/v1";
+static NSString* const kYYWSUrl = @"ws://fundbg.sunclouds.com/fun/ws/v1";
+//static NSString* const kYYWSUrl = @"ws://funws.sunclouds.com/fun/ws/v1";
+//static NSString* const kYYBaseUrl = @"http://fundbg.sunclouds.com/fun/";
+//static NSString* const kYYBaseUrl = @"http://192.168.1.200:9008/fun/";
+static NSString* const kYYBaseUrl =@"http://fundbg.sunclouds.com/fun/";
+
+#define AppName [NSString stringWithFormat:@"MouseLive"]
+
+#define YYLog(frmt, ...)       LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_DEF, DDLogFlagDebug,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define YYLogError(frmt, ...)       LOG_MAYBE(NO,                LOG_LEVEL_DEF, DDLogFlagError,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define YYLogDebug(frmt, ...)       LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_DEF, DDLogFlagDebug,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define YYLogDebugSync(frmt, ...)   LOG_MAYBE(NO,                LOG_LEVEL_DEF, DDLogFlagDebug,   0, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
+#define YYLogFuncEntry(class, func, paras, ...)  YYLogDebug(@"[%@-%@] %@ %@ %@", AppName, NSStringFromClass(class), NSStringFromSelector(func), [NSString stringWithFormat:@"%@", paras], @"entry", ##__VA_ARGS__)
+#define YYLogFuncExit(class, func, ...)  YYLogDebug(@"[%@-%@] %@ %@", AppName, NSStringFromClass(class), NSStringFromSelector(func), @"exit", ##__VA_ARGS__)
+
+#ifndef dispatch_main_async_safe
+#define dispatch_main_async_safe(block)\
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {\
+        block();\
+    } else {\
+        dispatch_async(dispatch_get_main_queue(), block);\
+    }
+#endif
+
+typedef void(^SendComplete)(NSError* _Nullable error);
+
+#if DEBUG
+// 如果是 debug
+    #if TARGET_IPHONE_SIMULATOR
+        // 如果是 模拟器
+        #define USE_BEATIFY 0
+    #else
+        #define USE_BEATIFY 1
+    #endif
+#else
+    #define USE_BEATIFY 1
+#endif
+
+#endif /* PrefixHeader_h */

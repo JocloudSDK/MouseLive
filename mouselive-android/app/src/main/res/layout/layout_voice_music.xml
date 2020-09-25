@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_voice_music_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <com.sclouds.mouselive.widget.ProgressImageView
+        android:id="@+id/ivMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@mipmap/ic_voice_music" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:background="#28FFFFFF" />
+
+    <ImageView
+        android:id="@+id/ivVol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:src="@mipmap/ic_voice_voloun" />
+
+    <SeekBar
+        android:id="@+id/sbVol"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progressDrawable="@drawable/voice_music_seekbar_progress_drawable"
+        android:thumb="@drawable/magic_seekbar_thumb_selector"
+        android:max="100" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<RCC>
+    <qresource prefix="/joy">
+        <file>language/en.qm</file>
+        <file alias="close_button">resource/close_button.png</file>
+        <file alias="min_button">resource/min_button.png</file>
+        <file alias="message_default_ico">resource/message_default_ico.png</file>
+        <file>language/zh.qm</file>
+        <file alias="app_ico">resource/ico.png</file>
+        <file alias="logo_en">resource/logo_en.png</file>
+        <file alias="logo_zh">resource/logo_zh.png</file>
+    </qresource>
+    <qresource prefix="/mainui">
+        <file alias="begin_living_button">resource/mainui/begin_living_button.png</file>
+        <file alias="count_bg">resource/mainui/count_bg.png</file>
+        <file alias="room_cell_default">resource/mainui/room_cell_default.png</file>
+        <file alias="begin_living_button_hover">resource/mainui/begin_living_button_hover.png</file>
+        <file alias="begin_living_button_press">resource/mainui/begin_living_button_press.png</file>
+        <file alias="cover_default">resource/mainui/cover_default.png</file>
+        <file alias="flush_button">resource/mainui/flush_button.png</file>
+    </qresource>
+    <qresource prefix="/livingui">
+        <file alias="camera_mirror_button">resource/livingui/camera_mirror_button.png</file>
+        <file alias="camera_on_button">resource/livingui/camera_on_button.png</file>
+        <file alias="micphone_on_button">resource/livingui/micphone_on_button.png</file>
+        <file alias="camera_off_button">resource/livingui/camera_off_button.png</file>
+        <file alias="micphone_off_button">resource/livingui/micphone_off_button.png</file>
+        <file alias="break_link_off">resource/livingui/break_link_off.png</file>
+    </qresource>
+    <qresource prefix="/beauty">
+        <file alias="beauty_original">resource/beauty/beauty_original.png</file>
+        <file alias="gesture_666">resource/beauty/gesture_666.png</file>
+        <file alias="gesture_baoquan">resource/beauty/gesture_baoquan.png</file>
+        <file alias="gesture_heshi">resource/beauty/gesture_heshi.png</file>
+        <file alias="gesture_ok">resource/beauty/gesture_ok.png</file>
+        <file alias="gesture_onehandheart">resource/beauty/gesture_onehandheart.png</file>
+        <file alias="gesture_palm">resource/beauty/gesture_palm.png</file>
+        <file alias="gesture_thumbsup">resource/beauty/gesture_thumbsup.png</file>
+        <file alias="gesture_tuojv">resource/beauty/gesture_tuojv.png</file>
+        <file alias="gesture_twohandheart">resource/beauty/gesture_twohandheart.png</file>
+        <file alias="gesture_yeah">resource/beauty/gesture_yeah.png</file>
+        <file alias="gesture_zhizhu">resource/beauty/gesture_zhizhu.png</file>
+        <file alias="sticker_aral">resource/beauty/sticker_aral.png</file>
+        <file alias="sticker_black_cat_ears">resource/beauty/sticker_black_cat_ears.png</file>
+        <file alias="sticker_bud_glasses">resource/beauty/sticker_bud_glasses.png</file>
+        <file alias="sticker_devil_gauze_mask">resource/beauty/sticker_devil_gauze_mask.png</file>
+        <file alias="sticker_seeking_attention">resource/beauty/sticker_seeking_attention.png</file>
+        <file alias="sticker_sunglasses">resource/beauty/sticker_sunglasses.png</file>
+        <file alias="yuan_gou">resource/beauty/yuan_gou.png</file>
+        <file alias="zheng_gou">resource/beauty/zheng_gou.png</file>
+        <file alias="sticker_YYbear">resource/beauty/sticker_YYbear.png</file>
+        <file alias="lj_fennen_tender">resource/beauty/lj_fennen_tender.png</file>
+        <file alias="lj_jiari_holiday">resource/beauty/lj_jiari_holiday.png</file>
+        <file alias="lj_nuanhe_warm">resource/beauty/lj_nuanhe_warm.png</file>
+        <file alias="lj_qingxi_clear">resource/beauty/lj_qingxi_clear.png</file>
+        <file alias="lj_qingxin_fresh">resource/beauty/lj_qingxin_fresh.png</file>
+    </qresource>
+</RCC>
