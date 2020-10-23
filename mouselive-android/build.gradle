@@ -20,8 +20,6 @@ buildscript {
             url 'https://maven.aliyun.com/repository/releases'
         }
 
-        // MagicView Module Repositories
-        maven { url "http://repo.yypm.com:8181/nexus/content/groups/public" }
     }
 
     dependencies {
@@ -50,8 +48,6 @@ allprojects {
             url 'https://maven.aliyun.com/repository/releases'
         }
 
-        // MagicView Module Repositories
-        maven { url "http://repo.yypm.com:8181/nexus/content/groups/public" }
     }
 }
 
